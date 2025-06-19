@@ -1,0 +1,38 @@
+{
+  "dataset_name": "crell",
+  "input_dim": 3092,
+  "best_fold": 7,
+  "best_score": 0.03028373047709465,
+  "config": {
+    "name": "Medium-Dataset-Opt",
+    "architecture": {
+      "dropout_encoder": 0.05,
+      "dropout_decoder": 0.02,
+      "clip_residual_weight": 0.08,
+      "clip_dim": 512
+    },
+    "training": {
+      "lr": 0.0008,
+      "batch_size": 20,
+      "weight_decay": 5e-07,
+      "epochs": 120,
+      "patience": 15,
+      "scheduler_factor": 0.5,
+      "optimizer": "Adam",
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "gradient_clip": 0.5
+    },
+    "dataset_characteristics": {
+      "size": "medium",
+      "samples": 576,
+      "input_dim": 3092,
+      "strategy": "medium_dataset_optimization"
+    }
+  },
+  "model_architecture": "CortexFlowCLIPCNNV1Optimized",
+  "save_timestamp": "2025-06-20T06:41:08.584761",
+  "device": "cuda"
+}

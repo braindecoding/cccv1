@@ -1,0 +1,38 @@
+{
+  "dataset_name": "miyawaki",
+  "input_dim": 967,
+  "best_fold": 4,
+  "best_score": 0.00010364298213971779,
+  "config": {
+    "name": "Ultra-Stable",
+    "architecture": {
+      "dropout_encoder": 0.06,
+      "dropout_decoder": 0.02,
+      "clip_residual_weight": 0.1,
+      "clip_dim": 512
+    },
+    "training": {
+      "lr": 0.0003,
+      "batch_size": 8,
+      "weight_decay": 1e-08,
+      "epochs": 200,
+      "patience": 25,
+      "scheduler_factor": 0.3,
+      "optimizer": "Adam",
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "gradient_clip": 0.5
+    },
+    "dataset_characteristics": {
+      "size": "small",
+      "samples": 107,
+      "input_dim": 967,
+      "strategy": "ultra_stable_learning"
+    }
+  },
+  "model_architecture": "CortexFlowCLIPCNNV1Optimized",
+  "save_timestamp": "2025-06-20T06:36:37.278765",
+  "device": "cuda"
+}

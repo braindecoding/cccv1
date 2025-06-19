@@ -1,0 +1,183 @@
+# CortexFlow-CLIP-CNN V1 - Git Ignore File
+# ========================================
+
+# Data directories (large files)
+data/processed/
+data/raw/
+data/cache/
+data/temp/
+
+# Model weights (large files)
+models/*.pth
+models/*.pt
+models/*.h5
+models/*.pkl
+
+# Results and outputs
+results/*/
+outputs/*/
+logs/*/
+checkpoints/*/
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.pt
+
+# TensorFlow
+*.h5
+*.pb
+
+# Matplotlib
+*.png
+*.jpg
+*.jpeg
+*.pdf
+*.svg
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.out
+*.err
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large dataset files
+*.npy
+*.npz
+*.mat
+*.hdf5
+*.h5
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Configuration files with sensitive data
+config/secrets.json
+config/api_keys.json
+.env
+.env.local
+.env.production
+
+# Experiment tracking
+wandb/
+mlruns/
+.neptune/
+
+# Documentation build
+docs/_build/
+docs/build/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# Custom ignores for this project
+# ================================
+
+# Keep only essential results
+!results/complete_cv_visualizations_*/
+!results/power_analysis_*/
+
+# Keep model metadata but not weights
+!models/*_metadata.json
+
+# Keep essential documentation
+!docs/FUTURE_IMPROVEMENTS_IMPLEMENTED.md
+!README.md
+!LICENSE

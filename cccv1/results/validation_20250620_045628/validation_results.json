@@ -1,0 +1,90 @@
+{
+  "miyawaki": {
+    "cccv1_scores": [
+      0.027913181111216545,
+      0.007370603270828724,
+      0.004827592056244612,
+      0.006690218113362789,
+      0.0031833022367209196
+    ],
+    "champion_target": 0.009845,
+    "champion_method": "Brain-Diffuser",
+    "statistical_result": {
+      "test_type": "Paired t-test",
+      "t_statistic": 0.77808853272527,
+      "p_value": 0.4799735251954806,
+      "cohens_d": 0.4725806623226149,
+      "significant": "False",
+      "cccv1_mean": 0.009996979357674718,
+      "cccv1_std": 0.009077131347852702,
+      "champion_mean": 0.014011430287003867,
+      "champion_std": 0.005750019176645329
+    }
+  },
+  "vangerven": {
+    "cccv1_scores": [
+      0.05233289673924446,
+      0.04653613269329071,
+      0.049963731318712234,
+      0.04157952591776848,
+      0.04372053220868111
+    ],
+    "champion_target": 0.045659,
+    "champion_method": "Brain-Diffuser",
+    "statistical_result": {
+      "test_type": "Paired t-test",
+      "t_statistic": 0.23791517155087893,
+      "p_value": 0.8236370203853045,
+      "cohens_d": 0.14314974547249665,
+      "significant": "False",
+      "cccv1_mean": 0.0468265637755394,
+      "cccv1_std": 0.003935091142270014,
+      "champion_mean": 0.04737910408514062,
+      "champion_std": 0.002890136633154777
+    }
+  },
+  "mindbigdata": {
+    "cccv1_scores": [
+      0.05641893297433853,
+      0.05648445710539818,
+      0.05736440420150757,
+      0.05743131414055824,
+      0.05813482031226158
+    ],
+    "champion_target": 0.057348,
+    "champion_method": "MinD-Vis",
+    "statistical_result": {
+      "test_type": "Paired t-test",
+      "t_statistic": -0.7256170472174612,
+      "p_value": 0.5082521414243505,
+      "cohens_d": -0.5699714467714911,
+      "significant": "False",
+      "cccv1_mean": 0.05716678574681282,
+      "cccv1_std": 0.0006435798922945429,
+      "champion_mean": 0.056791254062510656,
+      "champion_std": 0.0005294907173658308
+    }
+  },
+  "crell": {
+    "cccv1_scores": [
+      0.03253151848912239,
+      0.03279177099466324,
+      0.03154638409614563,
+      0.03168240189552307,
+      0.03409377112984657
+    ],
+    "champion_target": 0.032525,
+    "champion_method": "MinD-Vis",
+    "statistical_result": {
+      "test_type": "Paired t-test",
+      "t_statistic": -0.9676865524523574,
+      "p_value": 0.387999012884248,
+      "cohens_d": -0.7879206464376457,
+      "significant": "False",
+      "cccv1_mean": 0.03252916932106018,
+      "cccv1_std": 0.00091649613735012,
+      "champion_mean": 0.0318685689726834,
+      "champion_std": 0.0005335956066511724
+    }
+  }
+}

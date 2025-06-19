@@ -1,0 +1,152 @@
+{
+  "methodology": {
+    "metadata": {
+      "registration_date": "2025-06-20T05:43:47.350918",
+      "version": "1.0",
+      "researcher": "[Researcher Name]",
+      "institution": "[Institution Name]",
+      "study_title": "CortexFlow-CLIP-CNN V1: CLIP-Guided Neural Decoding Framework"
+    },
+    "research_objectives": {
+      "primary_objective": "Evaluate CortexFlow-CLIP-CNN V1 performance against state-of-the-art neural decoding methods",
+      "secondary_objectives": [
+        "Assess generalizability across multiple neural decoding datasets",
+        "Validate statistical significance of performance improvements",
+        "Analyze architectural contributions to performance gains"
+      ],
+      "success_criteria": "Statistically significant improvement over champion methods on primary evaluation"
+    },
+    "datasets": {
+      "included_datasets": [
+        "miyawaki",
+        "vangerven",
+        "mindbigdata",
+        "crell"
+      ],
+      "exclusion_criteria": "None - all available datasets included",
+      "data_sources": {
+        "miyawaki": {
+          "source": "Miyawaki et al. fMRI visual reconstruction dataset",
+          "reference": "DOI: 10.1016/j.neuron.2008.11.004",
+          "samples": {
+            "train": 107,
+            "test": 12
+          },
+          "characteristics": "Small dataset, complex visual patterns"
+        },
+        "vangerven": {
+          "source": "Vangerven et al. digit reconstruction dataset",
+          "reference": "DOI: 10.1016/j.neuroimage.2010.07.063",
+          "samples": {
+            "train": 90,
+            "test": 10
+          },
+          "characteristics": "Small dataset, digit patterns"
+        },
+        "mindbigdata": {
+          "source": "MindBigData EEG-to-visual dataset",
+          "reference": "https://mindbigdata.com/",
+          "samples": {
+            "train": 1080,
+            "test": 120
+          },
+          "characteristics": "Large dataset, cross-modal translation"
+        },
+        "crell": {
+          "source": "Crell EEG-to-visual dataset",
+          "reference": "[Reference to be added]",
+          "samples": {
+            "train": 576,
+            "test": 64
+          },
+          "characteristics": "Medium dataset, cross-modal translation"
+        }
+      }
+    },
+    "evaluation_protocol": {
+      "primary_evaluation": {
+        "method": "10_fold_cross_validation",
+        "rationale": "Provides robust performance estimate with adequate statistical power",
+        "implementation": "KFold with shuffle=True, random_state=42"
+      },
+      "secondary_evaluations": {
+        "single_training": {
+          "purpose": "Compare with traditional train-test evaluation",
+          "status": "supplementary_analysis"
+        },
+        "enhanced_validation": {
+          "purpose": "Multiple runs for increased statistical power",
+          "status": "supplementary_analysis"
+        }
+      },
+      "primary_metric": "mean_squared_error",
+      "secondary_metrics": [
+        "confidence_intervals",
+        "effect_size",
+        "win_rate"
+      ]
+    },
+    "statistical_analysis": {
+      "significance_level": 0.05,
+      "statistical_tests": {
+        "primary": "paired_t_test",
+        "effect_size": "cohens_d",
+        "confidence_intervals": "95_percent"
+      },
+      "multiple_comparisons": {
+        "correction": "none_prespecified",
+        "rationale": "Each dataset represents independent hypothesis test"
+      },
+      "power_analysis": {
+        "minimum_detectable_effect": 0.5,
+        "power_threshold": 0.8,
+        "alpha": 0.05
+      }
+    },
+    "model_specifications": {
+      "architecture": "CortexFlow-CLIP-CNN V1",
+      "hyperparameters": "dataset_specific_optimal_configurations",
+      "hyperparameter_source": "pre_existing_optimization_study",
+      "no_further_tuning": "Hyperparameters fixed before evaluation"
+    },
+    "data_preprocessing": {
+      "normalization": {
+        "method": "z_score_normalization",
+        "scope": "per_dataset_independent",
+        "order": "after_train_test_split_verification"
+      },
+      "missing_values": "none_expected",
+      "outlier_handling": "none_applied"
+    },
+    "reproducibility": {
+      "random_seeds": [
+        42,
+        43,
+        44
+      ],
+      "software_versions": {
+        "python": "3.x",
+        "pytorch": "2.7.1+cu128",
+        "numpy": "latest",
+        "sklearn": "latest"
+      },
+      "hardware": "NVIDIA GeForce RTX 3060"
+    },
+    "reporting_plan": {
+      "primary_results": "10_fold_cv_results_all_datasets",
+      "supplementary_results": [
+        "single_training",
+        "enhanced_validation"
+      ],
+      "negative_results": "will_be_reported_if_any",
+      "effect_sizes": "will_be_reported_for_all_comparisons",
+      "limitations": "will_be_explicitly_discussed"
+    }
+  },
+  "lock_info": {
+    "locked_date": "2025-06-20T05:43:47.356915",
+    "hash": "0097e62ba830720fe010c09727201f78e59e490efaf9e3899db1dab2a3112d44",
+    "locked": true,
+    "warning": "This methodology is locked and cannot be modified without explicit documentation"
+  }
+}

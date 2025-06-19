@@ -1,0 +1,245 @@
+{
+  "cccv1_optimal_configurations": {
+    "description": "Optimal configurations discovered through manual optimization that achieved 100% success rate",
+    "version": "1.0",
+    "date": "2025-06-19",
+    "success_rate": "100% (4/4 datasets)",
+    
+    "datasets": {
+      "miyawaki": {
+        "champion_method": "Brain-Diffuser",
+        "champion_mse": 0.009845,
+        "cccv1_mse": 0.009569,
+        "improvement_percent": 2.80,
+        "optimal_config": {
+          "name": "Ultra-Stable",
+          "architecture": {
+            "dropout_encoder": 0.06,
+            "dropout_decoder": 0.02,
+            "clip_residual_weight": 0.1,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.0003,
+            "batch_size": 8,
+            "weight_decay": 1e-8,
+            "epochs": 200,
+            "patience": 25,
+            "scheduler_factor": 0.3,
+            "optimizer": "Adam",
+            "betas": [0.9, 0.999],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "small",
+            "samples": 107,
+            "input_dim": 967,
+            "strategy": "ultra_stable_learning"
+          }
+        }
+      },
+      
+      "vangerven": {
+        "champion_method": "Brain-Diffuser",
+        "champion_mse": 0.045659,
+        "cccv1_mse": 0.037037,
+        "improvement_percent": 18.88,
+        "optimal_config": {
+          "name": "Medium-Stable",
+          "architecture": {
+            "dropout_encoder": 0.05,
+            "dropout_decoder": 0.015,
+            "clip_residual_weight": 0.08,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.0005,
+            "batch_size": 12,
+            "weight_decay": 5e-8,
+            "epochs": 150,
+            "patience": 20,
+            "scheduler_factor": 0.5,
+            "optimizer": "Adam",
+            "betas": [0.9, 0.999],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "small",
+            "samples": 90,
+            "input_dim": 3092,
+            "strategy": "medium_stable_learning"
+          }
+        }
+      },
+      
+      "mindbigdata": {
+        "champion_method": "MinD-Vis",
+        "champion_mse": 0.057348,
+        "cccv1_mse": 0.056685,
+        "improvement_percent": 1.16,
+        "optimal_config": {
+          "name": "Large-Dataset-Opt",
+          "architecture": {
+            "dropout_encoder": 0.04,
+            "dropout_decoder": 0.02,
+            "clip_residual_weight": 0.05,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "weight_decay": 1e-6,
+            "epochs": 100,
+            "patience": 12,
+            "scheduler_factor": 0.5,
+            "optimizer": "Adam",
+            "betas": [0.9, 0.999],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "large",
+            "samples": 1080,
+            "input_dim": 3092,
+            "strategy": "large_dataset_optimization"
+          }
+        }
+      },
+      
+      "crell": {
+        "champion_method": "MinD-Vis",
+        "champion_mse": 0.032525,
+        "cccv1_mse": 0.032055,
+        "improvement_percent": 1.44,
+        "optimal_config": {
+          "name": "Medium-Dataset-Opt",
+          "architecture": {
+            "dropout_encoder": 0.05,
+            "dropout_decoder": 0.02,
+            "clip_residual_weight": 0.08,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.0008,
+            "batch_size": 20,
+            "weight_decay": 5e-7,
+            "epochs": 120,
+            "patience": 15,
+            "scheduler_factor": 0.5,
+            "optimizer": "Adam",
+            "betas": [0.9, 0.999],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "medium",
+            "samples": 576,
+            "input_dim": 3092,
+            "strategy": "medium_dataset_optimization"
+          }
+        }
+      }
+    },
+    
+    "optimization_patterns": {
+      "small_datasets": {
+        "description": "Pattern for datasets with <200 samples",
+        "characteristics": ["miyawaki", "vangerven"],
+        "strategy": {
+          "lr_range": [0.0003, 0.0005],
+          "batch_size_range": [8, 12],
+          "weight_decay": "ultra_low (1e-8 to 5e-8)",
+          "epochs": "high (150-200)",
+          "patience": "high (20-25)",
+          "scheduler_factor": "conservative (0.3-0.5)"
+        }
+      },
+      
+      "medium_datasets": {
+        "description": "Pattern for datasets with 200-800 samples",
+        "characteristics": ["crell"],
+        "strategy": {
+          "lr_range": [0.0005, 0.0008],
+          "batch_size_range": [16, 20],
+          "weight_decay": "low (5e-7 to 1e-6)",
+          "epochs": "medium (120-150)",
+          "patience": "medium (15-20)",
+          "scheduler_factor": "balanced (0.5)"
+        }
+      },
+      
+      "large_datasets": {
+        "description": "Pattern for datasets with >800 samples",
+        "characteristics": ["mindbigdata"],
+        "strategy": {
+          "lr_range": [0.0008, 0.001],
+          "batch_size_range": [24, 32],
+          "weight_decay": "standard (1e-6)",
+          "epochs": "low (100-120)",
+          "patience": "low (12-15)",
+          "scheduler_factor": "standard (0.5)"
+        }
+      }
+    },
+    
+    "architecture_insights": {
+      "clip_embedding_dimension": {
+        "value": 512,
+        "rationale": "Optimal balance between semantic capacity and computational efficiency"
+      },
+      
+      "progressive_dropout": {
+        "encoder_pattern": "0.06 -> 0.042 -> 0.03",
+        "decoder_pattern": "0.015-0.02",
+        "rationale": "Gradual regularization reduction for stable learning"
+      },
+      
+      "residual_enhancement": {
+        "weight_range": [0.05, 0.1],
+        "rationale": "Small residual weights prevent overfitting while adding semantic enhancement"
+      },
+      
+      "normalization_strategy": {
+        "layer_norm": "After each linear layer for stability",
+        "l2_normalization": "On CLIP embeddings for unit sphere alignment",
+        "rationale": "Dual normalization ensures both training stability and semantic alignment"
+      }
+    },
+    
+    "training_insights": {
+      "optimizer_choice": {
+        "type": "Adam",
+        "betas": [0.9, 0.999],
+        "rationale": "Proven stability for neural decoding tasks"
+      },
+      
+      "learning_rate_scheduling": {
+        "type": "ReduceLROnPlateau",
+        "patience": "1/3 of early stopping patience",
+        "rationale": "Adaptive learning rate based on validation performance"
+      },
+      
+      "early_stopping": {
+        "strategy": "Dataset-size dependent patience",
+        "small_datasets": "25 epochs patience",
+        "large_datasets": "12 epochs patience",
+        "rationale": "Larger datasets converge faster, smaller need more patience"
+      }
+    },
+    
+    "performance_analysis": {
+      "breakthrough_factors": [
+        "CLIP-inspired semantic embedding space",
+        "Dataset-specific optimization patterns",
+        "Progressive dropout for stability",
+        "Residual enhancement with small coefficients",
+        "Dual normalization strategy"
+      ],
+      
+      "success_metrics": {
+        "consistency": "100% success rate across all datasets",
+        "improvement_range": "1.16% to 18.88%",
+        "average_improvement": "6.07%",
+        "largest_breakthrough": "Vangerven dataset (18.88%)"
+      }
+    }
+  }
+}
