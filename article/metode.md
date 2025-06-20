@@ -16,16 +16,16 @@ Kerangka metodologi mengintegrasikan empat dataset neural decoding dengan karakt
 
 Model CortexFlow merupakan arsitektur hibrid multi-modal yang menggabungkan panduan semantik berbasis CLIP dengan jaringan saraf konvolusional untuk pemecahan kode neural dari data fMRI dan EEG. Sebagaimana diilustrasikan dalam Gambar 1, arsitektur ini terdiri dari tiga komponen utama yang saling terintegrasi dengan kemampuan multi-modal.
 
-### 3.2.1 Architectural Design Rationale
+### 3.2.1 Dasar Pemikiran Rancangan Arsitektur
 
-**CLIP-Guided Encoder Design:**
-Enkoder terpandu CLIP dipilih berdasarkan kemampuan CLIP dalam menangkap semantic relationships antara visual dan textual representations. Komponen ini memetakan sinyal neural (fMRI asli atau fMRI sintetis dari EEG via NT-ViT) ke dalam ruang embedding semantik CLIP menggunakan arsitektur berlapis dengan normalisasi layer dan fungsi aktivasi SiLU. Pemilihan SiLU activation function didasarkan pada superior performance dalam deep networks dan smooth gradient properties yang mendukung stable training.
+**Rancangan Enkoder Terpandu CLIP:**
+Enkoder terpandu CLIP dipilih berdasarkan kemampuan CLIP dalam menangkap hubungan semantik antara representasi visual dan tekstual. Komponen ini memetakan sinyal neural (fMRI asli atau fMRI sintetis dari EEG melalui NT-ViT) ke dalam ruang penyematan semantik CLIP menggunakan arsitektur berlapis dengan normalisasi lapisan dan fungsi aktivasi SiLU. Pemilihan fungsi aktivasi SiLU didasarkan pada kinerja superior dalam jaringan dalam dan sifat gradien halus yang mendukung pelatihan stabil.
 
-**Multi-Modal Integration Strategy:**
-Integrasi multi-modal dirancang untuk mengakomodasi heterogeneity antara fMRI dan EEG signals sambil mempertahankan semantic consistency. NT-ViT transcoding memungkinkan unifikasi representational space, sementara CLIP guidance memastikan semantic alignment dengan visual targets.
+**Strategi Integrasi Multi-Modal:**
+Integrasi multi-modal dirancang untuk mengakomodasi heterogenitas antara sinyal fMRI dan EEG sambil mempertahankan konsistensi semantik. Transkoding NT-ViT memungkinkan unifikasi ruang representasi, sementara panduan CLIP memastikan penyelarasan semantik dengan target visual.
 
-**Dropout and Regularization Strategy:**
-Komponen ini menerapkan dropout progresif untuk menjaga stabilitas pelatihan dan menghasilkan embedding berukuran 512 dimensi yang sesuai dengan standar CLIP. Dataset-specific dropout rates dioptimalkan berdasarkan sample size dan complexity untuk balance antara model capacity dan overfitting prevention.
+**Strategi Dropout dan Regularisasi:**
+Komponen ini menerapkan dropout progresif untuk menjaga stabilitas pelatihan dan menghasilkan penyematan berukuran 512 dimensi yang sesuai dengan standar CLIP. Tingkat dropout spesifik dataset dioptimalkan berdasarkan ukuran sampel dan kompleksitas untuk keseimbangan antara kapasitas model dan pencegahan overfitting.
 
 Modul peningkatan semantik bertugas meningkatkan kualitas representasi embedding melalui koneksi residual yang dapat disesuaikan sebagaimana ditunjukkan dalam jalur residual pada Gambar 1. Modul ini menggunakan bobot residual yang dioptimalkan secara spesifik untuk setiap dataset dan menerapkan normalisasi L2 untuk mempertahankan konsistensi embedding. Dekoder terpandu CLIP kemudian mengonversi embedding semantik menjadi keluaran visual menggunakan arsitektur linear berlapis dengan regularisasi dropout yang menghasilkan keluaran berukuran 28×28 piksel dengan fungsi aktivasi sigmoid.
 
@@ -43,21 +43,21 @@ dimana $\alpha_{residual}$ adalah bobot residual yang dioptimalkan secara datase
 
 **Algoritma 1: Pelatihan CortexFlow**
 ```
-Input: Dataset D, hyperparameters θ, CLIP pre-trained model
-Output: Optimized model θ*
+Masukan: Dataset D, hiperparameter θ, model CLIP pra-terlatih
+Keluaran: Model teroptimasi θ*
 
-1. Initialize E_θ, S_θ, D_θ, optimizer Adam
-2. for epoch t = 1 to max_epochs do
-3.   for each batch B in D do
+1. Inisialisasi E_θ, S_θ, D_θ, pengoptimal Adam
+2. untuk epoch t = 1 hingga epoch_maksimum lakukan
+3.   untuk setiap batch B dalam D lakukan
 4.     h_enc ← E_θ(x_batch)
-5.     h_res ← S_θ(h_enc) using Eq. (2)
+5.     h_res ← S_θ(h_enc) menggunakan Pers. (2)
 6.     ŷ ← D_θ(h_res)
-7.     L_total ← compute loss using Eq. (1)
-8.     θ ← Adam_update(θ, ∇L_total)
-9.   end for
-10.  if early_stopping_criteria then break
-11. end for
-12. return θ*
+7.     L_total ← hitung kerugian menggunakan Pers. (1)
+8.     θ ← pembaruan_Adam(θ, ∇L_total)
+9.   akhir untuk
+10.  jika kriteria_penghentian_dini maka berhenti
+11. akhir untuk
+12. kembalikan θ*
 ```
 
 Model CortexFlow dioptimalkan secara individual untuk setiap dataset berdasarkan karakteristik data yang unik. Optimisasi hyperparameter dilakukan melalui pencarian sistematis dengan validasi silang untuk setiap dataset. Proses pelatihan mengikuti Algoritma 1 yang dirancang khusus untuk mengoptimalkan arsitektur CortexFlow dengan mengintegrasikan panduan semantik CLIP dengan pembelajaran residual adaptif (Persamaan 2). Algoritma ini mengoptimalkan fungsi kerugian gabungan (Persamaan 1) melalui backpropagation dengan optimizer Adam.
@@ -70,24 +70,24 @@ Model CortexFlow dioptimalkan secara individual untuk setiap dataset berdasarkan
 | Dropout Encoder | 0,06 | 0,05 | 0,05 | 0,04 | Tingkat dropout pada layer encoder |
 | Dropout Decoder | 0,02 | 0,015 | 0,02 | 0,02 | Tingkat dropout pada layer decoder |
 | Bobot Residual CLIP | 0,1 | 0,08 | 0,08 | 0,05 | Koefisien koneksi residual |
-| Laju Pembelajaran | 0,0003 | 0,0005 | 0,0008 | 0,001 | Learning rate untuk optimizer Adam |
+| Laju Pembelajaran | 0,0003 | 0,0005 | 0,0008 | 0,001 | Laju pembelajaran untuk pengoptimal Adam |
 | Ukuran Batch | 8 | 12 | 20 | 32 | Jumlah sampel per batch |
-| Max Epochs | 200 | 150 | 120 | 100 | Maksimum epoch untuk training |
-| Patience | 25 | 20 | 15 | 12 | Early stopping patience |
+| Epoch Maksimum | 200 | 150 | 120 | 100 | Maksimum epoch untuk pelatihan |
+| Kesabaran | 25 | 20 | 15 | 12 | Kesabaran penghentian dini |
 
-Konfigurasi optimal bervariasi secara signifikan antardataset sebagaimana ditunjukkan dalam Tabel 1, dengan dataset yang lebih kecil seperti Miyawaki memerlukan dropout yang lebih tinggi untuk mencegah overfitting dan patience yang lebih besar untuk stabilitas training. Dataset yang lebih besar seperti MindBigData menggunakan learning rate yang lebih agresif dan patience yang lebih kecil untuk konvergensi yang efisien.
+Konfigurasi optimal bervariasi secara signifikan antardataset sebagaimana ditunjukkan dalam Tabel 1, dengan dataset yang lebih kecil seperti Miyawaki memerlukan dropout yang lebih tinggi untuk mencegah overfitting dan kesabaran yang lebih besar untuk stabilitas pelatihan. Dataset yang lebih besar seperti MindBigData menggunakan laju pembelajaran yang lebih agresif dan kesabaran yang lebih kecil untuk konvergensi yang efisien.
 
-### 3.2.1 Hyperparameter Optimization Strategy
+### 3.2.2 Strategi Optimisasi Hiperparameter
 
-Optimisasi hyperparameter dilakukan melalui pendekatan sistematis berdasarkan karakteristik dataset dan arsitektur model. Strategi optimisasi mengikuti prinsip-prinsip berikut:
+Optimisasi hiperparameter dilakukan melalui pendekatan sistematis berdasarkan karakteristik dataset dan arsitektur model. Strategi optimisasi mengikuti prinsip-prinsip berikut:
 
-**Dataset-Specific Optimization Rationale:**
-- **Small datasets (Miyawaki, Vangerven):** Regularisasi agresif dengan dropout tinggi (0.05-0.06) dan patience besar (20-25) untuk mencegah overfitting pada sampel terbatas
-- **Large datasets (Crell, MindBigData):** Learning rate lebih tinggi (0.0008-0.001) dan patience kecil (12-15) untuk konvergensi efisien pada data abundant
-- **Multi-modal datasets (Crell, MindBigData):** Bobot residual CLIP yang lebih rendah (0.05-0.08) untuk mengakomodasi kompleksitas tambahan dari neural transcoding
+**Dasar Pemikiran Optimisasi Spesifik Dataset:**
+- **Dataset kecil (Miyawaki, Vangerven):** Regularisasi agresif dengan dropout tinggi (0,05-0,06) dan kesabaran besar (20-25) untuk mencegah overfitting pada sampel terbatas
+- **Dataset besar (Crell, MindBigData):** Laju pembelajaran lebih tinggi (0,0008-0,001) dan kesabaran kecil (12-15) untuk konvergensi efisien pada data berlimpah
+- **Dataset multi-modal (Crell, MindBigData):** Bobot residual CLIP yang lebih rendah (0,05-0,08) untuk mengakomodasi kompleksitas tambahan dari transkoding neural
 
-**Convergence Criteria and Early Stopping:**
-Kriteria konvergensi yang ketat diterapkan dengan early stopping berdasarkan validation loss plateau untuk memastikan model mencapai optimum lokal yang stabil tanpa overfitting. Monitoring dilakukan terhadap validation MSE dengan tolerance 1e-6 untuk improvement detection.
+**Kriteria Konvergensi dan Penghentian Dini:**
+Kriteria konvergensi yang ketat diterapkan dengan penghentian dini berdasarkan dataran kerugian validasi untuk memastikan model mencapai optimum lokal yang stabil tanpa overfitting. Pemantauan dilakukan terhadap MSE validasi dengan toleransi 1e-6 untuk deteksi peningkatan.
 
 ## 3.3 Dataset, Prapemrosesan, dan Metode Pembanding
 
@@ -109,25 +109,25 @@ Protokol prapemrosesan yang konsisten diterapkan pada seluruh dataset dengan ada
 - Epoch extraction dan baseline correction
 - Neural transcoding menggunakan NT-ViT (detail dalam Section 3.3.1)
 
-### 3.3.3 Data Quality Assurance and Validation
+### 3.3.3 Jaminan Kualitas Data dan Validasi
 
-**Data Integrity Verification:**
-Pemeriksaan integritas data dan konsistensi format dilakukan secara sistematis untuk setiap dataset dan modalitas melalui automated validation pipeline:
-- **Format validation:** Verifikasi struktur .mat files dan required fields (fmriTrn, stimTrn, fmriTest, stimTest)
-- **Dimension consistency:** Automated checks untuk input-output dimension compatibility
-- **Range validation:** Statistical validation untuk data ranges dan distribution properties
-- **Missing data detection:** Systematic identification dan handling missing atau corrupted samples
+**Verifikasi Integritas Data:**
+Pemeriksaan integritas data dan konsistensi format dilakukan secara sistematis untuk setiap dataset dan modalitas melalui jalur validasi otomatis:
+- **Validasi format:** Verifikasi struktur berkas .mat dan bidang yang diperlukan (fmriTrn, stimTrn, fmriTest, stimTest)
+- **Konsistensi dimensi:** Pemeriksaan otomatis untuk kompatibilitas dimensi masukan-keluaran
+- **Validasi rentang:** Validasi statistik untuk rentang data dan sifat distribusi
+- **Deteksi data hilang:** Identifikasi sistematis dan penanganan sampel yang hilang atau rusak
 
-**Quality Control Metrics:**
-- **Signal-to-noise ratio:** Calculated untuk setiap dataset untuk assess data quality
-- **Outlier detection:** Statistical outlier identification menggunakan 3-sigma rule
-- **Cross-modal consistency:** Untuk EEG datasets, validation of NT-ViT transcoding quality
-- **Temporal consistency:** Verification of temporal structure preservation dalam preprocessing
+**Metrik Kontrol Kualitas:**
+- **Rasio sinyal-ke-derau:** Dihitung untuk setiap dataset untuk menilai kualitas data
+- **Deteksi pencilan:** Identifikasi pencilan statistik menggunakan aturan 3-sigma
+- **Konsistensi lintas-modal:** Untuk dataset EEG, validasi kualitas transkoding NT-ViT
+- **Konsistensi temporal:** Verifikasi preservasi struktur temporal dalam prapemrosesan
 
-**Preprocessing Validation:**
-- **Normalization verification:** Statistical validation bahwa z-score normalization properly applied
-- **Artifact removal validation:** For EEG data, verification of ICA artifact removal effectiveness
-- **Transcoding quality:** For NT-ViT processed data, correlation analysis dengan reference fMRI patterns
+**Validasi Prapemrosesan:**
+- **Verifikasi normalisasi:** Validasi statistik bahwa normalisasi z-score diterapkan dengan benar
+- **Validasi penghapusan artefak:** Untuk data EEG, verifikasi efektivitas penghapusan artefak ICA
+- **Kualitas transkoding:** Untuk data yang diproses NT-ViT, analisis korelasi dengan pola fMRI referensi
 
 Penerapan benih acak yang identik (nilai 42) memastikan reproduksibilitas hasil di semua eksperimen sebagaimana ditekankan dalam metodologi konsisten pada Gambar 2.
 
@@ -160,42 +160,42 @@ Model Mind-Vis diimplementasikan berdasarkan spesifikasi dari publikasi CVPR 202
 
 Strategi validasi menggunakan validasi silang berlapis sepuluh lipatan dengan benih acak yang konsisten pada nilai 42 di seluruh eksperimen sebagaimana diilustrasikan dalam fase validasi silang pada Gambar 2.
 
-### 3.4.1 Cross-Validation Design and Data Partitioning
+### 3.4.1 Rancangan Validasi Silang dan Partisi Data
 
-**Stratified K-Fold Implementation:**
-Pembagian data dilakukan secara identik untuk semua metode dan dataset dengan protokol yang ketat untuk mencegah kebocoran data antarlipatan. Stratifikasi dilakukan berdasarkan distribusi target untuk mempertahankan representativitas setiap lipatan, dengan particular attention pada:
-- **Balanced representation:** Setiap fold mempertahankan proporsi yang sama dari variasi target
-- **Temporal consistency:** Untuk datasets dengan temporal structure, pembagian mempertahankan chronological order
-- **Cross-modal balance:** Untuk datasets EEG (Crell, MindBigData), distribusi signal quality dijaga konsisten
+**Implementasi K-Fold Terstratifikasi:**
+Pembagian data dilakukan secara identik untuk semua metode dan dataset dengan protokol yang ketat untuk mencegah kebocoran data antarlipatan. Stratifikasi dilakukan berdasarkan distribusi target untuk mempertahankan representativitas setiap lipatan, dengan perhatian khusus pada:
+- **Representasi seimbang:** Setiap lipatan mempertahankan proporsi yang sama dari variasi target
+- **Konsistensi temporal:** Untuk dataset dengan struktur temporal, pembagian mempertahankan urutan kronologis
+- **Keseimbangan lintas-modal:** Untuk dataset EEG (Crell, MindBigData), distribusi kualitas sinyal dijaga konsisten
 
-**Data Leakage Prevention:**
-Protokol strict separation diterapkan untuk memastikan tidak ada informasi dari test set yang bocor ke training process:
-- **Preprocessing isolation:** Normalization parameters dihitung hanya dari training folds
-- **Hyperparameter isolation:** Model selection dilakukan menggunakan nested CV pada training folds
-- **Evaluation isolation:** Test fold hanya digunakan untuk final evaluation, tidak untuk model development
+**Pencegahan Kebocoran Data:**
+Protokol pemisahan ketat diterapkan untuk memastikan tidak ada informasi dari set uji yang bocor ke proses pelatihan:
+- **Isolasi prapemrosesan:** Parameter normalisasi dihitung hanya dari lipatan pelatihan
+- **Isolasi hiperparameter:** Pemilihan model dilakukan menggunakan validasi silang bersarang pada lipatan pelatihan
+- **Isolasi evaluasi:** Lipatan uji hanya digunakan untuk evaluasi akhir, tidak untuk pengembangan model
 
-**Sample Size Justification:**
-Ukuran sampel untuk setiap dataset telah divalidasi melalui power analysis untuk mendeteksi effect size minimum d = 0.5 dengan power 0.80. Dataset sizes: Miyawaki (119), Vangerven (100), Crell (640), MindBigData (1200) memberikan adequate power untuk statistical inference yang valid.
+**Justifikasi Ukuran Sampel:**
+Ukuran sampel untuk setiap dataset telah divalidasi melalui analisis daya untuk mendeteksi ukuran efek minimum d = 0,5 dengan daya 0,80. Ukuran dataset: Miyawaki (119), Vangerven (100), Crell (640), MindBigData (1200) memberikan daya yang memadai untuk inferensi statistik yang valid.
 
-Evaluasi kinerja menggunakan metrik primer berupa Mean Squared Error untuk mengukur akurasi rekonstruksi, Structural Similarity Index untuk menilai kualitas struktural, dan Koefisien Korelasi Pearson untuk menganalisis korelasi linear sebagaimana ditampilkan dalam fase metrik evaluasi pada Gambar 2. Metrik sekunder mencakup waktu inferensi yang dirata-rata dari 100 eksekusi untuk memastikan konsistensi pengukuran, penggunaan memori GPU puncak untuk analisis efisiensi sumber daya, dan jejak karbon komputasi untuk evaluasi dampak lingkungan.
+Evaluasi kinerja menggunakan metrik primer berupa Galat Kuadrat Rata-rata untuk mengukur akurasi rekonstruksi, Indeks Kesamaan Struktural untuk menilai kualitas struktural, dan Koefisien Korelasi Pearson untuk menganalisis korelasi linear sebagaimana ditampilkan dalam fase metrik evaluasi pada Gambar 2. Metrik sekunder mencakup waktu inferensi yang dirata-rata dari 100 eksekusi untuk memastikan konsistensi pengukuran, penggunaan memori GPU puncak untuk analisis efisiensi sumber daya, dan jejak karbon komputasi untuk evaluasi dampak lingkungan.
 
 Pengujian hipotesis menggunakan hipotesis nol bahwa tidak terdapat perbedaan signifikan antara metode dan hipotesis alternatif bahwa CortexFlow menunjukkan kinerja yang lebih baik secara signifikan. Uji statistik menggunakan uji-t berpasangan untuk perbandingan dalam dataset dengan koreksi perbandingan berganda menggunakan metode Bonferroni.
 
-### 3.4.2 Statistical Power and Effect Size Analysis
+### 3.4.2 Analisis Daya Statistik dan Ukuran Efek
 
-**Power Analysis Framework:**
-Statistical power analysis dilakukan untuk memastikan adequacy sampel dalam mendeteksi perbedaan yang meaningful antara metode. Berdasarkan pilot studies dan literature review, effect size minimum yang dianggap practically significant ditetapkan pada Cohen's d = 0.5 (medium effect). Power analysis menggunakan α = 0.05 dan desired power = 0.80.
+**Kerangka Analisis Daya:**
+Analisis daya statistik dilakukan untuk memastikan kecukupan sampel dalam mendeteksi perbedaan yang bermakna antara metode. Berdasarkan studi percontohan dan tinjauan literatur, ukuran efek minimum yang dianggap signifikan secara praktis ditetapkan pada Cohen's d = 0,5 (efek sedang). Analisis daya menggunakan α = 0,05 dan daya yang diinginkan = 0,80.
 
-**Effect Size Calculation and Interpretation:**
-Ukuran efek dihitung menggunakan Cohen's d untuk menilai signifikansi praktis dengan interpretasi standar: small (d ≥ 0,2), medium (d ≥ 0,5), dan large (d ≥ 0,8). Confidence intervals 95% dihitung untuk semua effect size estimates menggunakan bias-corrected bootstrap dengan 1000 resamples.
+**Perhitungan dan Interpretasi Ukuran Efek:**
+Ukuran efek dihitung menggunakan Cohen's d untuk menilai signifikansi praktis dengan interpretasi standar: kecil (d ≥ 0,2), sedang (d ≥ 0,5), dan besar (d ≥ 0,8). Interval kepercayaan 95% dihitung untuk semua estimasi ukuran efek menggunakan bootstrap terkoreksi bias dengan 1000 sampel ulang.
 
-**Multiple Comparison Correction:**
-Koreksi Bonferroni diterapkan untuk mengontrol family-wise error rate dalam multiple pairwise comparisons. Dengan 3 metode yang dibandingkan, menghasilkan 3 pairwise comparisons per dataset, sehingga α yang disesuaikan = 0.05/3 = 0.0167 per comparison.
+**Koreksi Perbandingan Berganda:**
+Koreksi Bonferroni diterapkan untuk mengontrol tingkat kesalahan keluarga dalam perbandingan berpasangan berganda. Dengan 3 metode yang dibandingkan, menghasilkan 3 perbandingan berpasangan per dataset, sehingga α yang disesuaikan = 0,05/3 = 0,0167 per perbandingan.
 
-**Statistical Assumptions Validation:**
-- **Normality:** Shapiro-Wilk test untuk residuals (p > 0.05 required)
-- **Homoscedasticity:** Levene's test untuk equality of variances
-- **Independence:** Ensured melalui proper cross-validation fold separation
+**Validasi Asumsi Statistik:**
+- **Normalitas:** Uji Shapiro-Wilk untuk residual (p > 0,05 diperlukan)
+- **Homoskedastisitas:** Uji Levene untuk kesetaraan varians
+- **Independensi:** Dipastikan melalui pemisahan lipatan validasi silang yang tepat
 
 Kriteria signifikansi ditetapkan pada α = 0,05 dengan interpretasi effect size mengikuti konvensi Cohen. Semua eksperimen dilakukan pada sistem yang konsisten dengan spesifikasi NVIDIA RTX 3060 GPU, Intel i7-12700K CPU, dan 32GB DDR4 RAM untuk memastikan konsistensi dan reproducibilitas hasil.
 
