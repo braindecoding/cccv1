@@ -67,12 +67,18 @@ def create_publication_package():
     print(f"\n🎨 Collecting Figures and Visualizations...")
     figures_dir = package_dir / "03_figures_and_visualizations"
     
-    # Copy academic summary visualization
-    academic_summary = list(Path("results/academic_summary").glob("*.png"))
-    for fig in academic_summary:
+    # Copy academic summary visualization (PNG)
+    academic_summary_png = list(Path("results/academic_summary").glob("*.png"))
+    for fig in academic_summary_png:
         shutil.copy2(fig, figures_dir / fig.name)
         print(f"   ✅ {fig.name}")
-    
+
+    # Copy academic summary visualization (SVG)
+    academic_summary_svg = list(Path("results/academic_summary").glob("*.svg"))
+    for fig in academic_summary_svg:
+        shutil.copy2(fig, figures_dir / fig.name)
+        print(f"   ✅ {fig.name}")
+
     # Copy academic summary PDF
     academic_summary_pdf = list(Path("results/academic_summary").glob("*.pdf"))
     for fig in academic_summary_pdf:

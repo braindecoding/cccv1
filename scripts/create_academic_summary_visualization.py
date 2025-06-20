@@ -246,29 +246,37 @@ def create_academic_summary():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     output_file = output_dir / f"academic_summary_visualization_{timestamp}.png"
     
-    plt.savefig(output_file, dpi=300, bbox_inches='tight', 
+    plt.savefig(output_file, dpi=300, bbox_inches='tight',
                 facecolor='white', edgecolor='none')
-    
+
     print(f"🎨 Academic summary visualization saved: {output_file}")
-    
+
+    # Also save as SVG for publications
+    svg_file = output_dir / f"academic_summary_visualization_{timestamp}.svg"
+    plt.savefig(svg_file, format='svg', bbox_inches='tight',
+                facecolor='white', edgecolor='none')
+
+    print(f"🎨 SVG version saved: {svg_file}")
+
     # Also save as PDF for publications
     pdf_file = output_dir / f"academic_summary_visualization_{timestamp}.pdf"
-    plt.savefig(pdf_file, dpi=300, bbox_inches='tight', 
+    plt.savefig(pdf_file, dpi=300, bbox_inches='tight',
                 facecolor='white', edgecolor='none')
-    
+
     print(f"📄 PDF version saved: {pdf_file}")
-    
+
     plt.show()
-    
-    return output_file, pdf_file
+
+    return output_file, svg_file, pdf_file
 
 if __name__ == "__main__":
     print("🎨 Creating Academic Summary Visualization...")
     print("=" * 60)
     
-    png_file, pdf_file = create_academic_summary()
-    
+    png_file, svg_file, pdf_file = create_academic_summary()
+
     print("\n✅ Academic Summary Visualization Complete!")
     print(f"📊 PNG: {png_file}")
+    print(f"🎨 SVG: {svg_file}")
     print(f"📄 PDF: {pdf_file}")
     print("\n🎯 Ready for academic publication and presentation!")
