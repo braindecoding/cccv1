@@ -77,7 +77,7 @@ Thumbs.db
 *.jpg
 *.jpeg
 *.pdf
-*.svg
+#*.svg
 
 # Temporary files
 *.tmp
