@@ -57,6 +57,12 @@ def create_publication_package():
         shutil.copy2("reports/green_neural_decoding_paper.md",
                     main_paper_dir / "green_neural_decoding_paper.md")
         print(f"   ✅ Green neural decoding paper")
+
+    # Copy enhanced methodology section
+    if Path("reports/enhanced_methodology_section.md").exists():
+        shutil.copy2("reports/enhanced_methodology_section.md",
+                    main_paper_dir / "enhanced_methodology_section.md")
+        print(f"   ✅ Enhanced methodology section")
     
     # 2. Supplementary Materials
     print(f"\n📋 Collecting Supplementary Materials...")
@@ -131,18 +137,31 @@ def create_publication_package():
     # Copy key scripts
     key_scripts = [
         "scripts/validate_cccv1.py",
-        "scripts/run_power_analysis.py", 
+        "scripts/run_power_analysis.py",
         "scripts/visualize_cv_saved_model.py",
         "scripts/collect_all_visualizations.py",
         "sota_comparison/academic_compliant_evaluation.py",
         "sota_comparison/unified_cv_framework.py"
     ]
-    
+
     for script in key_scripts:
         if Path(script).exists():
             target_path = code_dir / Path(script).name
             shutil.copy2(script, target_path)
             print(f"   ✅ {Path(script).name}")
+
+    # Copy core model implementations
+    model_files = [
+        "src/models/cortexflow_clip_cnn_v1.py",
+        "sota_comparison/mind_vis_implementation.py",
+        "sota_comparison/lightweight_brain_diffuser.py"
+    ]
+
+    for model_file in model_files:
+        if Path(model_file).exists():
+            target_path = code_dir / Path(model_file).name
+            shutil.copy2(model_file, target_path)
+            print(f"   ✅ {Path(model_file).name}")
     
     # Copy requirements and environment info
     if Path("requirements.txt").exists():
