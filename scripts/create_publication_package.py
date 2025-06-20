@@ -78,7 +78,8 @@ def create_publication_package():
     # Copy article figures
     article_figures = [
         "article/cortexflow_architecture.svg",
-        "article/methodology_flowchart.svg"
+        "article/methodology_flowchart.svg",
+        "article/nt_vit_architecture.svg"
     ]
 
     for figure in article_figures:

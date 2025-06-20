@@ -1,0 +1,170 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="processGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2ecc71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#27ae60;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="methodGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analysisGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#9b59b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8e44ad;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#34495e" />
+    </marker>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="600" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">Metodologi Eksperimen CortexFlow vs SOTA</text>
+  
+  <!-- Dataset Input Phase -->
+  <rect x="50" y="80" width="280" height="120" rx="10" fill="url(#dataGrad)" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="190" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Dataset Input</text>
+  
+  <rect x="70" y="120" width="60" height="25" rx="5" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="1"/>
+  <text x="100" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Miyawaki</text>
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">119 samples</text>
+  
+  <rect x="140" y="120" width="60" height="25" rx="5" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="1"/>
+  <text x="170" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Vangerven</text>
+  <text x="170" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">100 samples</text>
+  
+  <rect x="210" y="120" width="60" height="25" rx="5" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="1"/>
+  <text x="240" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">Crell</text>
+  <text x="240" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">640 samples</text>
+  
+  <rect x="280" y="120" width="70" height="25" rx="5" fill="rgba(255,255,255,0.3)" stroke="white" stroke-width="1"/>
+  <text x="315" y="138" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="white">MindBigData</text>
+  <text x="315" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="white">1200 samples</text>
+  
+  <text x="190" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="white">Benih Acak: 42 (Konsisten)</text>
+  
+  <!-- Preprocessing Phase -->
+  <rect x="450" y="80" width="250" height="120" rx="10" fill="url(#processGrad)" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="575" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Prapemrosesan Data</text>
+  
+  <text x="470" y="130" font-family="Arial, sans-serif" font-size="11" fill="white">• Normalisasi Z-score</text>
+  <text x="470" y="150" font-family="Arial, sans-serif" font-size="11" fill="white">• Deteksi Outlier (±3σ)</text>
+  <text x="470" y="170" font-family="Arial, sans-serif" font-size="11" fill="white">• Validasi Integritas Data</text>
+  <text x="470" y="190" font-family="Arial, sans-serif" font-size="11" fill="white">• Konsistensi Format</text>
+  
+  <!-- Cross-Validation Setup -->
+  <rect x="800" y="80" width="300" height="120" rx="10" fill="url(#analysisGrad)" stroke="#8e44ad" stroke-width="2" filter="url(#shadow)"/>
+  <text x="950" y="105" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Validasi Silang 10-Lipatan</text>
+  
+  <text x="820" y="130" font-family="Arial, sans-serif" font-size="11" fill="white">• Stratified Splitting</text>
+  <text x="820" y="150" font-family="Arial, sans-serif" font-size="11" fill="white">• Pembagian Data Identik</text>
+  <text x="820" y="170" font-family="Arial, sans-serif" font-size="11" fill="white">• Pencegahan Data Leakage</text>
+  <text x="820" y="190" font-family="Arial, sans-serif" font-size="11" fill="white">• Random State: 42</text>
+  
+  <!-- Model Training Phase -->
+  <g>
+    <!-- CortexFlow -->
+    <rect x="100" y="280" width="200" height="100" rx="10" fill="url(#methodGrad)" stroke="#c0392b" stroke-width="2" filter="url(#shadow)"/>
+    <text x="200" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">CortexFlow</text>
+    <text x="200" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">CLIP-CNN V1</text>
+    <text x="120" y="345" font-family="Arial, sans-serif" font-size="9" fill="white">• Optimasi Dataset-Spesifik</text>
+    <text x="120" y="360" font-family="Arial, sans-serif" font-size="9" fill="white">• CLIP-Guided Architecture</text>
+    <text x="120" y="375" font-family="Arial, sans-serif" font-size="9" fill="white">• Semantic Enhancement</text>
+    
+    <!-- Mind-Vis -->
+    <rect x="400" y="280" width="200" height="100" rx="10" fill="url(#methodGrad)" stroke="#c0392b" stroke-width="2" filter="url(#shadow)"/>
+    <text x="500" y="305" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="white">Mind-Vis</text>
+    <text x="500" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">(CVPR 2023)</text>
+    <text x="420" y="345" font-family="Arial, sans-serif" font-size="9" fill="white">• Contrastive Learning</text>
+    <text x="420" y="360" font-family="Arial, sans-serif" font-size="9" fill="white">• Multi-stage Training</text>
+    <text x="420" y="375" font-family="Arial, sans-serif" font-size="9" fill="white">• 316-320M Parameters</text>
+    
+    <!-- Lightweight Brain-Diffuser -->
+    <rect x="700" y="280" width="200" height="100" rx="10" fill="url(#methodGrad)" stroke="#c0392b" stroke-width="2" filter="url(#shadow)"/>
+    <text x="800" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Lightweight</text>
+    <text x="800" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">Brain-Diffuser</text>
+    <text x="720" y="335" font-family="Arial, sans-serif" font-size="9" fill="white">• Two-stage Architecture</text>
+    <text x="720" y="350" font-family="Arial, sans-serif" font-size="9" fill="white">• VDVAE + Light Diffusion</text>
+    <text x="720" y="365" font-family="Arial, sans-serif" font-size="9" fill="white">• 157-159M Parameters</text>
+  </g>
+  
+  <!-- Evaluation Metrics -->
+  <rect x="200" y="450" width="400" height="100" rx="10" fill="url(#processGrad)" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Metrik Evaluasi</text>
+  
+  <text x="220" y="500" font-family="Arial, sans-serif" font-size="11" fill="white">Primer:</text>
+  <text x="220" y="515" font-family="Arial, sans-serif" font-size="10" fill="white">• MSE, SSIM, Pearson Correlation</text>
+  
+  <text x="420" y="500" font-family="Arial, sans-serif" font-size="11" fill="white">Sekunder:</text>
+  <text x="420" y="515" font-family="Arial, sans-serif" font-size="10" fill="white">• Inference Time, Memory Usage</text>
+  <text x="420" y="530" font-family="Arial, sans-serif" font-size="10" fill="white">• Carbon Footprint</text>
+  
+  <!-- Green Computing Analysis -->
+  <rect x="700" y="450" width="300" height="100" rx="10" fill="url(#analysisGrad)" stroke="#8e44ad" stroke-width="2" filter="url(#shadow)"/>
+  <text x="850" y="475" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Analisis Komputasi Hijau</text>
+  
+  <text x="720" y="500" font-family="Arial, sans-serif" font-size="10" fill="white">• Jejak Karbon = Karbon Pelatihan + Karbon Inferensi</text>
+  <text x="720" y="515" font-family="Arial, sans-serif" font-size="10" fill="white">• Efisiensi Energi per Inferensi</text>
+  <text x="720" y="530" font-family="Arial, sans-serif" font-size="10" fill="white">• Optimisasi Sumber Daya</text>
+  
+  <!-- Statistical Analysis -->
+  <rect x="100" y="620" width="500" height="100" rx="10" fill="url(#dataGrad)" stroke="#2980b9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="350" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Analisis Statistik</text>
+  
+  <text x="120" y="670" font-family="Arial, sans-serif" font-size="11" fill="white">• Uji-t Berpasangan dengan Koreksi Bonferroni</text>
+  <text x="120" y="685" font-family="Arial, sans-serif" font-size="11" fill="white">• Cohen's d untuk Effect Size</text>
+  <text x="120" y="700" font-family="Arial, sans-serif" font-size="11" fill="white">• Power Analysis (α=0,05, β=0,8)</text>
+  
+  <!-- Final Results -->
+  <rect x="700" y="620" width="300" height="100" rx="10" fill="url(#processGrad)" stroke="#27ae60" stroke-width="2" filter="url(#shadow)"/>
+  <text x="850" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">Hasil dan Laporan</text>
+  
+  <text x="720" y="670" font-family="Arial, sans-serif" font-size="11" fill="white">• Perbandingan Kinerja</text>
+  <text x="720" y="685" font-family="Arial, sans-serif" font-size="11" fill="white">• Analisis Signifikansi Statistik</text>
+  <text x="720" y="700" font-family="Arial, sans-serif" font-size="11" fill="white">• Evaluasi Dampak Lingkungan</text>
+  
+  <!-- Arrows -->
+  <line x1="330" y1="140" x2="440" y2="140" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="700" y1="140" x2="790" y2="140" stroke="#34495e" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Vertical arrows from CV to methods -->
+  <line x1="950" y1="200" x2="950" y2="250" stroke="#34495e" stroke-width="2"/>
+  <line x1="950" y1="250" x2="200" y2="250" stroke="#34495e" stroke-width="2"/>
+  <line x1="200" y1="250" x2="200" y2="270" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="500" y1="250" x2="500" y2="270" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="800" y1="250" x2="800" y2="270" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- From methods to evaluation -->
+  <line x1="200" y1="380" x2="200" y2="420" stroke="#34495e" stroke-width="2"/>
+  <line x1="200" y1="420" x2="400" y2="420" stroke="#34495e" stroke-width="2"/>
+  <line x1="400" y1="420" x2="400" y2="440" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="500" y1="380" x2="500" y2="420" stroke="#34495e" stroke-width="2"/>
+  <line x1="800" y1="380" x2="800" y2="420" stroke="#34495e" stroke-width="2"/>
+  <line x1="800" y1="420" x2="850" y2="420" stroke="#34495e" stroke-width="2"/>
+  <line x1="850" y1="420" x2="850" y2="440" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- From evaluation to analysis -->
+  <line x1="400" y1="550" x2="400" y2="580" stroke="#34495e" stroke-width="2"/>
+  <line x1="400" y1="580" x2="350" y2="580" stroke="#34495e" stroke-width="2"/>
+  <line x1="350" y1="580" x2="350" y2="610" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <line x1="850" y1="550" x2="850" y2="610" stroke="#34495e" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Hardware Specification -->
+  <rect x="50" y="450" width="120" height="80" rx="10" fill="#34495e" stroke="#2c3e50" stroke-width="2" filter="url(#shadow)"/>
+  <text x="110" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Hardware</text>
+  <text x="110" y="485" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">Spesifikasi</text>
+  <text x="70" y="505" font-family="Arial, sans-serif" font-size="9" fill="white">AMD Ryzen 5 4600G</text>
+  <text x="70" y="520" font-family="Arial, sans-serif" font-size="9" fill="white">16GB DDR4 RAM</text>
+</svg>
