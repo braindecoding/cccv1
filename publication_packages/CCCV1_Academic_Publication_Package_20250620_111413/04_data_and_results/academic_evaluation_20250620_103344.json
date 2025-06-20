@@ -1,0 +1,104 @@
+{
+  "results": {
+    "miyawaki": {
+      "Lightweight-Brain-Diffuser": {
+        "method": "Lightweight-Brain-Diffuser",
+        "dataset": "miyawaki",
+        "cv_scores": [
+          0.07512366026639938,
+          0.041038092225790024,
+          0.08177927136421204,
+          0.07242698222398758,
+          0.04567309096455574,
+          0.08048582822084427,
+          0.05347243323922157,
+          0.06704279780387878,
+          0.06423243135213852,
+          0.06368090212345123
+        ],
+        "cv_mean": 0.06449554897844792,
+        "cv_std": 0.013279864883295037,
+        "n_folds": 10,
+        "academic_compliant": true
+      }
+    },
+    "vangerven": {
+      "Lightweight-Brain-Diffuser": {
+        "method": "Lightweight-Brain-Diffuser",
+        "dataset": "vangerven",
+        "cv_scores": [
+          0.055891718715429306,
+          0.051920779049396515,
+          0.05003637820482254,
+          0.06394252181053162,
+          0.04809537157416344,
+          0.05516386777162552,
+          0.053952109068632126,
+          0.052580706775188446,
+          0.06020013615489006,
+          0.05559942498803139
+        ],
+        "cv_mean": 0.0547383014112711,
+        "cv_std": 0.004430018824754934,
+        "n_folds": 10,
+        "academic_compliant": true
+      }
+    },
+    "crell": {
+      "Lightweight-Brain-Diffuser": {
+        "method": "Lightweight-Brain-Diffuser",
+        "dataset": "crell",
+        "cv_scores": [
+          0.04133874550461769,
+          0.041217646561563015,
+          0.04099022876471281,
+          0.04347868915647268,
+          0.04099015984684229,
+          0.043091874569654465,
+          0.0401378758251667,
+          0.04555407166481018,
+          0.04047236405313015,
+          0.04330428596585989
+        ],
+        "cv_mean": 0.042057594191282986,
+        "cv_std": 0.0016299710300949003,
+        "n_folds": 10,
+        "academic_compliant": true
+      }
+    },
+    "mindbigdata": {
+      "Lightweight-Brain-Diffuser": {
+        "method": "Lightweight-Brain-Diffuser",
+        "dataset": "mindbigdata",
+        "cv_scores": [
+          0.05578365828841925,
+          0.05777015397325158,
+          0.05599160399287939,
+          0.05801408551633358,
+          0.057349612936377525,
+          0.057492957916110754,
+          0.05946986097842455,
+          0.058556266594678164,
+          0.0573896006681025,
+          0.059201034251600504
+        ],
+        "cv_mean": 0.05770188351161778,
+        "cv_std": 0.0011434687464356157,
+        "n_folds": 10,
+        "academic_compliant": true
+      }
+    }
+  },
+  "metadata": {
+    "timestamp": "20250620_103344",
+    "datasets": [
+      "miyawaki",
+      "vangerven",
+      "crell",
+      "mindbigdata"
+    ],
+    "n_folds": 10,
+    "random_state": 42,
+    "academic_compliant": true
+  }
+}

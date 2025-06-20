@@ -48,9 +48,15 @@ def create_publication_package():
     
     # Copy comprehensive report
     if Path("reports/comprehensive_academic_report.md").exists():
-        shutil.copy2("reports/comprehensive_academic_report.md", 
+        shutil.copy2("reports/comprehensive_academic_report.md",
                     main_paper_dir / "comprehensive_academic_report.md")
         print(f"   ✅ Comprehensive academic report")
+
+    # Copy green neural decoding paper
+    if Path("reports/green_neural_decoding_paper.md").exists():
+        shutil.copy2("reports/green_neural_decoding_paper.md",
+                    main_paper_dir / "green_neural_decoding_paper.md")
+        print(f"   ✅ Green neural decoding paper")
     
     # 2. Supplementary Materials
     print(f"\n📋 Collecting Supplementary Materials...")
@@ -84,6 +90,15 @@ def create_publication_package():
     for fig in academic_summary_pdf:
         shutil.copy2(fig, figures_dir / fig.name)
         print(f"   ✅ {fig.name}")
+
+    # Copy green neural decoding visualizations
+    green_viz_dir = Path("results/green_neural_decoding")
+    if green_viz_dir.exists():
+        green_files = list(green_viz_dir.glob("*"))
+        for fig in green_files:
+            if fig.is_file():
+                shutil.copy2(fig, figures_dir / fig.name)
+                print(f"   ✅ {fig.name}")
     
     # Copy CV visualizations
     cv_viz_dirs = list(Path("results").glob("complete_cv_visualizations_*"))
