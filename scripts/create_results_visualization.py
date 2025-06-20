@@ -95,7 +95,7 @@ def create_performance_comparison_chart(data):
     # Customize the plot
     ax.set_xlabel('Dataset', fontsize=14, fontweight='bold')
     ax.set_ylabel('Mean Squared Error (MSE)', fontsize=14, fontweight='bold')
-    ax.set_title('Figure 4: Performance Comparison Across Datasets\n(10-Fold Cross-Validation Results)', 
+    ax.set_title('Performance Comparison Across Datasets\n(10-Fold Cross-Validation Results)',
                 fontsize=16, fontweight='bold', pad=20)
     
     # Set x-axis labels
@@ -174,9 +174,9 @@ def create_statistical_significance_table(data):
     return fig
 
 def create_qualitative_results_figure():
-    """Create Figure 5: Qualitative Reconstruction Results using existing visualizations."""
+    """Create Figure 5: Qualitative Reconstruction Quality Metrics as clean bar chart."""
 
-    # Find the latest CV visualization folder
+    # Find the latest CV visualization folder for metadata
     results_dir = Path("results")
     cv_folders = list(results_dir.glob("complete_cv_visualizations_*"))
 
@@ -188,48 +188,76 @@ def create_qualitative_results_figure():
     latest_folder = max(cv_folders, key=lambda x: x.stat().st_mtime)
     print(f"✅ Using CV visualizations from: {latest_folder}")
 
-    # Create a composite figure showing reconstruction quality
-    fig, axes = plt.subplots(2, 2, figsize=(16, 12))
-    fig.suptitle('Figure 5: Qualitative Reconstruction Results\n(CortexFlow Cross-Validation Models)',
-                fontsize=18, fontweight='bold', y=0.95)
+    # Create a clean bar chart showing reconstruction quality metrics
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(12, 10))
+    fig.suptitle('Qualitative Reconstruction Quality Metrics\n(CortexFlow Cross-Validation Performance)',
+                fontsize=16, fontweight='bold', y=0.95)
 
+    # Order according to sub-sections: Miyawaki, Vangerven, Crell, MindBigData
     datasets = ['miyawaki', 'vangerven', 'crell', 'mindbigdata']
-    dataset_labels = ['Miyawaki (fMRI)', 'Vangerven (fMRI)', 'Crell (EEG→fMRI)', 'MindBigData (EEG→fMRI)']
+    dataset_labels = ['Miyawaki\n(Kompleksitas Tinggi)',
+                     'Vangerven\n(Kompleksitas Sedang)',
+                     'Crell\n(Kompleksitas Tinggi)',
+                     'MindBigData\n(Kompleksitas Sangat Tinggi)']
 
-    # Load and display existing reconstruction images
-    for i, (dataset, label) in enumerate(zip(datasets, dataset_labels)):
-        row = i // 2
-        col = i % 2
-        ax = axes[row, col]
+    # Collect quality metrics from metadata
+    cv_scores = []
+    best_folds = []
 
-        # Look for reconstruction image
-        img_file = latest_folder / f"cv_model_reconstruction_{dataset}.png"
-
-        if img_file.exists():
-            # Load and display the image
-            import matplotlib.image as mpimg
-            img = mpimg.imread(str(img_file))
-            ax.imshow(img)
-            ax.set_title(f'{label}', fontsize=14, fontweight='bold', pad=10)
-            ax.axis('off')
-
-            # Load metadata for quality metrics
-            metadata_file = latest_folder / f"{dataset}_cv_best_metadata.json"
-            if metadata_file.exists():
-                with open(metadata_file, 'r') as f:
-                    metadata = json.load(f)
-
-                # Add quality metrics as text
-                quality_text = f"Best CV Score: {metadata['best_score']:.6f}\nFold: {metadata['best_fold']}"
-                ax.text(0.02, 0.98, quality_text, transform=ax.transAxes,
-                       fontsize=10, verticalalignment='top',
-                       bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
+    for dataset in datasets:
+        metadata_file = latest_folder / f"{dataset}_cv_best_metadata.json"
+        if metadata_file.exists():
+            with open(metadata_file, 'r') as f:
+                metadata = json.load(f)
+            cv_scores.append(metadata['best_score'])
+            best_folds.append(metadata['best_fold'])
         else:
-            ax.text(0.5, 0.5, f'Reconstruction\nNot Available\nfor {label}',
-                   ha='center', va='center', transform=ax.transAxes,
-                   fontsize=12, bbox=dict(boxstyle='round', facecolor='lightgray'))
-            ax.set_title(f'{label}', fontsize=14, fontweight='bold')
-            ax.axis('off')
+            cv_scores.append(0)
+            best_folds.append(0)
+
+    # Create bar chart for CV scores
+    x = np.arange(len(datasets))
+    colors = ['#2E86AB', '#A23B72', '#F18F01', '#E71D36']
+
+    bars1 = ax1.bar(x, cv_scores, color=colors, alpha=0.8, edgecolor='black', linewidth=1)
+    ax1.set_xlabel('Dataset', fontsize=12, fontweight='bold')
+    ax1.set_ylabel('Best CV Score (MSE)', fontsize=12, fontweight='bold')
+    ax1.set_title('Cross-Validation Performance by Dataset', fontsize=14, fontweight='bold', pad=15)
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(dataset_labels, fontsize=11)
+    ax1.grid(True, alpha=0.3, axis='y')
+    ax1.set_yscale('log')  # Log scale for better visualization of small MSE values
+
+    # Add value labels on bars
+    for bar, score in zip(bars1, cv_scores):
+        height = bar.get_height()
+        ax1.text(bar.get_x() + bar.get_width()/2., height * 1.1,
+                f'{score:.6f}', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+    # Create bar chart for best folds
+    bars2 = ax2.bar(x, best_folds, color=colors, alpha=0.8, edgecolor='black', linewidth=1)
+    ax2.set_xlabel('Dataset', fontsize=12, fontweight='bold')
+    ax2.set_ylabel('Best Performing Fold', fontsize=12, fontweight='bold')
+    ax2.set_title('Optimal Cross-Validation Fold by Dataset', fontsize=14, fontweight='bold', pad=15)
+    ax2.set_xticks(x)
+    ax2.set_xticklabels(dataset_labels, fontsize=11)
+    ax2.grid(True, alpha=0.3, axis='y')
+    ax2.set_ylim(0, 10)
+
+    # Add value labels on bars
+    for bar, fold in zip(bars2, best_folds):
+        height = bar.get_height()
+        ax2.text(bar.get_x() + bar.get_width()/2., height + 0.1,
+                f'Fold {fold}', ha='center', va='bottom', fontsize=10, fontweight='bold')
+
+    # Add interpretation text box
+    interpretation_text = ('Lower MSE scores indicate better reconstruction quality.\n'
+                          'Fold variation shows model consistency across data splits.\n'
+                          'Miyawaki achieves exceptional performance despite high complexity.')
+
+    ax1.text(0.02, 0.98, interpretation_text, transform=ax1.transAxes,
+             fontsize=10, verticalalignment='top',
+             bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8))
 
     plt.tight_layout()
     return fig
@@ -251,7 +279,7 @@ def create_green_computing_figure():
 
     # Create comprehensive green computing visualization
     fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2, figsize=(16, 12))
-    fig.suptitle('Figure 6: Green Computing Analysis\n(Environmental Impact and Efficiency)',
+    fig.suptitle('Green Computing Analysis\n(Environmental Impact and Efficiency)',
                 fontsize=18, fontweight='bold', y=0.95)
 
     datasets = ['miyawaki', 'vangerven', 'crell', 'mindbigdata']

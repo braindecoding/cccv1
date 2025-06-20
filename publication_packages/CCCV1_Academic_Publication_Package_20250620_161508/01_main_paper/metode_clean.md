@@ -197,7 +197,7 @@ Koreksi Bonferroni diterapkan untuk mengontrol tingkat kesalahan keluarga dalam 
 - **Homoskedastisitas:** Uji Levene untuk kesetaraan varians
 - **Independensi:** Dipastikan melalui pemisahan lipatan validasi silang yang tepat
 
-Kriteria signifikansi ditetapkan pada α = 0,05 dengan interpretasi effect size mengikuti konvensi Cohen. Semua eksperimen dilakukan pada sistem yang konsisten dengan spesifikasi NVIDIA RTX 3060 GPU 12 NVRAM, dan 32GB DDR4 RAM untuk memastikan konsistensi dan reproducibilitas hasil.
+Kriteria signifikansi ditetapkan pada α = 0,05 dengan interpretasi effect size mengikuti konvensi Cohen. Semua eksperimen dilakukan pada sistem yang konsisten dengan spesifikasi NVIDIA RTX 3060 GPU, Intel i7-12700K CPU, dan 32GB DDR4 RAM untuk memastikan konsistensi dan reproducibilitas hasil.
 
 ## 3.5 Metodologi Komputasi Hijau dan Analisis Efisiensi
 

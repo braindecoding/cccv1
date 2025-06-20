@@ -15,7 +15,7 @@ Evaluasi kinerja model CortexFlow dilakukan menggunakan validasi silang berlapis
 
 *Catatan: Nilai MSE yang lebih rendah menunjukkan kinerja yang lebih baik. Peningkatan dihitung sebagai: (MSE_pembanding - MSE_CortexFlow) / MSE_pembanding × 100%*
 
-![Performance Comparison](../results/comprehensive_results_visualization_20250620_160826/figure_4_performance_comparison.svg)
+![Performance Comparison](../results/comprehensive_results_visualization_20250620_160135/figure_4_performance_comparison.svg)
 **Gambar 4.** Perbandingan kinerja CortexFlow dengan metode pembanding pada semua dataset menggunakan validasi silang 10-lipatan. CortexFlow mencapai MSE terendah pada semua dataset dengan peningkatan signifikan terutama pada dataset Miyawaki.
 
 Hasil pada Tabel 2 dan Gambar 4 menunjukkan bahwa CortexFlow mencapai kinerja terbaik pada semua dataset yang diuji. Peningkatan kinerja paling signifikan terlihat pada dataset Miyawaki dengan pengurangan MSE sebesar 88,0% dibandingkan Mind-Vis dan 94,3% dibandingkan Lightweight Brain-Diffuser. Pada dataset yang lebih besar seperti MindBigData, peningkatan kinerja masih konsisten meskipun dengan margin yang lebih kecil, menunjukkan robustness model CortexFlow pada berbagai skala dataset.
@@ -136,7 +136,7 @@ Evaluasi dampak lingkungan dilakukan untuk menganalisis jejak karbon dan efisien
 
 Hasil analisis dampak lingkungan menunjukkan bahwa CortexFlow mencapai efisiensi karbon yang sangat superior dibandingkan metode pembanding. Total jejak karbon CortexFlow 79,5% lebih rendah dibandingkan Mind-Vis dan 67,0% lebih rendah dibandingkan Lightweight Brain-Diffuser. Efisiensi karbon CortexFlow 4,8× lebih baik dibandingkan Mind-Vis dan 3,1× lebih baik dibandingkan Lightweight Brain-Diffuser.
 
-![Green Computing Analysis](../results/comprehensive_results_visualization_20250620_160826/figure_6_green_computing.svg)
+![Green Computing Analysis](../results/comprehensive_results_visualization_20250620_160135/figure_6_green_computing.svg)
 **Gambar 5.** Analisis komputasi hijau menunjukkan CortexFlow unggul dalam semua aspek efisiensi lingkungan: jejak karbon terendah, efisiensi parameter terbaik, kecepatan inferensi tertinggi, dan efisiensi karbon superior dibandingkan metode pembanding.
 
 Kontribusi terbesar terhadap jejak karbon berasal dari fase pelatihan, dengan emisi inferensi yang relatif minimal untuk semua metode. Hal ini menekankan pentingnya efisiensi pelatihan dalam konteks komputasi hijau. CortexFlow mencapai konvergensi yang lebih cepat dengan waktu pelatihan yang signifikan lebih singkat, berkontribusi langsung terhadap pengurangan emisi karbon.
@@ -163,20 +163,10 @@ Dataset MindBigData dengan 1.200 sampel dan dimensi input 3.092 merepresentasika
 
 ## 4.6 Visualisasi Rekonstruksi dan Analisis Kualitatif
 
-![Qualitative Results](../results/comprehensive_results_visualization_20250620_160826/figure_5_qualitative_results.svg)
-**Gambar 6.** Metrik kualitas rekonstruksi kualitatif CortexFlow menunjukkan performa validasi silang yang konsisten. Panel atas menampilkan skor CV terbaik (MSE) dengan skala logaritmik untuk visualisasi yang optimal, sedangkan panel bawah menunjukkan fold optimal untuk setiap dataset. Miyawaki mencapai skor terbaik (1.04×10⁻⁴) pada fold 4, Vangerven optimal pada fold 9, Crell pada fold 8, dan MindBigData pada fold 6.
+![Qualitative Results](../results/comprehensive_results_visualization_20250620_160135/figure_5_qualitative_results.svg)
+**Gambar 6.** Hasil rekonstruksi kualitatif CortexFlow pada semua dataset menggunakan model validasi silang terbaik. Layout vertikal menunjukkan progression kompleksitas dari Miyawaki (tinggi), Vangerven (sedang), Crell (tinggi), hingga MindBigData (sangat tinggi), dengan kualitas rekonstruksi yang konsisten across modalitas (fMRI dan EEG→fMRI).
 
-Evaluasi kualitatif dilakukan melalui analisis metrik kualitas rekonstruksi dari model validasi silang terbaik untuk setiap dataset. Analisis ini memberikan insight tentang konsistensi kinerja model dan variabilitas performa across different data splits.
-
-**Detail Kinerja Cross-Validation per Dataset:**
-
-**Dataset Miyawaki (Kompleksitas Tinggi):** Model mencapai skor CV terbaik 1.04×10⁻⁴ pada fold 4, menunjukkan kemampuan exceptional dalam menangani data fMRI kompleks dengan rasio sampel-ke-fitur yang rendah. Konsistensi performa yang tinggi across folds mengkonfirmasi robustness arsitektur CortexFlow.
-
-**Dataset Vangerven (Kompleksitas Sedang):** Performa optimal dicapai pada fold 9 dengan skor yang konsisten, menunjukkan stabilitas model pada dataset dengan dimensionalitas tinggi. Variabilitas yang rendah across folds mengindikasikan generalisasi yang baik.
-
-**Dataset Crell (Kompleksitas Tinggi - EEG→fMRI):** Model terbaik pada fold 8 menunjukkan kemampuan superior dalam pemrosesan lintas modal. Integrasi NT-ViT transcoding dengan CortexFlow menghasilkan kualitas rekonstruksi yang konsisten meskipun kompleksitas tambahan dari konversi EEG ke fMRI.
-
-**Dataset MindBigData (Kompleksitas Sangat Tinggi):** Fold 6 memberikan performa optimal pada dataset berskala besar, mengkonfirmasi skalabilitas arsitektur CortexFlow. Konsistensi kinerja pada data volume tinggi menunjukkan efisiensi komputasi yang baik.
+Evaluasi kualitatif dilakukan melalui visualisasi hasil rekonstruksi untuk menganalisis kualitas output visual dari setiap metode. Analisis ini memberikan insight tentang kemampuan model dalam mempertahankan detail struktural dan semantik dari input fMRI.
 
 Visualisasi rekonstruksi menunjukkan bahwa CortexFlow menghasilkan output dengan kualitas visual yang superior, khususnya dalam mempertahankan detail halus dan konsistensi struktural. Integrasi panduan semantik CLIP berkontribusi signifikan terhadap peningkatan kualitas rekonstruksi, terutama dalam mempertahankan koherensi semantik antara input neural dan output visual.
 
