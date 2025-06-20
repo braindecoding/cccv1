@@ -39,8 +39,6 @@ Modul Semantic Enhancer menerapkan koneksi residual adaptif dengan formula:
 
 $h_{enhanced} = \alpha_{residual} \cdot h_{enc} + (1 - \alpha_{residual}) \cdot L_2(h_{enc})$ (2)
 
-$$h_{\text{enhanced}} = \alpha_{\text{residual}} \cdot h_{\text{enc}} + (1 - \alpha_{\text{residual}}) \cdot \text{normalize_L2}(h_{\text{enc}})$$
-
 dimana $\alpha_{residual}$ adalah bobot residual yang dioptimalkan secara dataset-spesifik dan $L_2(\cdot)$ adalah normalisasi L2.
 
 **Algoritma 1: Pelatihan CortexFlow**
