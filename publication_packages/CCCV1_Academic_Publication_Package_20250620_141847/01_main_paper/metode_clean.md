@@ -86,7 +86,7 @@ Protokol prapemrosesan yang konsisten diterapkan pada seluruh dataset dengan ada
 - Epoch extraction dan baseline correction
 - Neural transcoding menggunakan NT-ViT untuk konversi ke representasi fMRI
 
-Pemeriksaan integritas data dan konsistensi format dilakukan secara sistematis untuk setiap dataset dan modalitas. Penerapan benih acak yang identik (nilai 42) memastikan reproduksibilitas hasil di semua eksperimen sebagaimana ditekankan dalam metodologi konsisten pada Gambar 2.
+Pemeriksaan integritas data dan konsistensi format dilakukan secara sistematis untuk setiap dataset dan modalitas. Penerapan benih acak yang identik (nilai 42) memastikan reproducibilitas hasil di semua eksperimen sebagaimana ditekankan dalam metodologi konsisten pada Gambar 2.
 
 ### 3.3.1 Neural Transcoding dengan NT-ViT untuk Data EEG
 
