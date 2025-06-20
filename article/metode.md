@@ -222,29 +222,3 @@ $E_{energy} = \frac{Throughput}{P_{GPU}}$ (7)
 dimana $Performance_{score} = 1/MSE$ untuk normalisasi dan $Throughput$ adalah inferensi per detik.
 
 Metodologi pengukuran efisiensi mencakup perhitungan efisiensi karbon menggunakan Persamaan 6, efisiensi energi berupa kecepatan inferensi per watt yang dikonsumsi menggunakan Persamaan 7, efisiensi sumber daya melalui optimisasi penggunaan memori, dan efisiensi deployment yang menilai kompatibilitas perangkat edge. Semua pengukuran dilakukan dengan protokol yang konsisten untuk memastikan perbandingan yang adil antara metode.
-
-## 3.6 Reproducibilitas, Keterbatasan, dan Pertimbangan Etis
-
-### 3.6.1 Computational Reproducibility Framework
-
-**Repository Structure and Code Organization:**
-Struktur repositori dirancang secara sistematis dengan direktori terpisah untuk implementasi model, skrip evaluasi, implementasi metode pembanding, penanganan dataset, penyimpanan hasil, dan dokumentasi dependensi. Skrip kunci mencakup kerangka validasi silang, evaluasi akademik, analisis komputasi hijau, dan analisis daya statistik sesuai dengan prinsip reproducibilitas yang diterapkan.
-
-**Deterministic Computation Protocols:**
-- **Random seed management:** Consistent seed (42) untuk PyTorch, NumPy, dan Python random generators
-- **CUDA determinism:** torch.backends.cudnn.deterministic = True untuk GPU reproducibility
-- **Hardware consistency:** All experiments pada NVIDIA RTX 3060 dengan identical CUDA version
-- **Software versioning:** Fixed versions untuk semua dependencies (PyTorch 2.0.1, CUDA 11.8)
-
-**Configuration Management:**
-Semua hyperparameters dan experimental settings disimpan dalam JSON configuration files dengan version control. Model metadata mencakup training history, convergence metrics, dan hardware specifications untuk complete experimental provenance.
-
-**Code Documentation and Availability:**
-Semua kode didokumentasikan secara komprehensif dengan standar akademik dan tersedia untuk verifikasi independen. Implementation mengikuti best practices untuk scientific computing dengan unit tests untuk critical functions.
-
-Verifikasi hasil dilakukan melalui eksekusi independen berganda, pengujian kompatibilitas lintas platform, manajemen dependensi menggunakan lingkungan terkontainerisasi, dan verifikasi output menggunakan checksum MD5. Protokol ini memastikan bahwa hasil dapat direproduksi secara konsisten di berbagai lingkungan komputasi. Konsistensi hasil dikonfirmasi melalui multiple runs dengan benih acak yang sama (42) untuk memastikan determinisme dalam proses pelatihan dan evaluasi.
-
-Keterbatasan yang diketahui mencakup ketergantungan pada spesifikasi hardware NVIDIA RTX 3060 GPU yang dapat mempengaruhi generalisasi hasil, ruang lingkup yang terbatas pada empat dataset pemecahan kode neural, kemungkinan variasi implementasi metode pembanding yang mungkin tidak sepenuhnya dioptimalkan, dan faktor temporal yang mencerminkan kondisi implementasi saat ini. Asumsi statistik mencakup distribusi normal residual secara aproximatif, independensi lipatan validasi silang, homoskedastisitas, dan sampling yang representatif.
-
-Penelitian ini mematuhi standar etika dengan menggunakan dataset publik yang tidak melibatkan data personal. Atribusi data dilakukan melalui sitasi yang tepat untuk semua dataset dengan kepatuhan terhadap lisensi yang berlaku. Kontribusi sumber terbuka dilakukan untuk mengurangi duplikasi penelitian dan mempromosikan praktik komputasi hijau. Transparansi metodologi dipastikan melalui dokumentasi lengkap semua prosedur eksperimen dan analisis statistik sesuai dengan standar publikasi akademik internasional.
-
