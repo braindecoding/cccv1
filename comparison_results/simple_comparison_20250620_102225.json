@@ -1,0 +1,154 @@
+{
+  "miyawaki": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "miyawaki",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.007865596562623978,
+        "correlation": 0.9796645500429549,
+        "ssim_mean": 0.9758661389350891,
+        "ssim_std": 0.028703726828098297
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "miyawaki",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.03847901523113251,
+        "correlation": 0.8980927486918311,
+        "ssim_mean": 0.8687394857406616,
+        "ssim_std": 0.11342182755470276
+      },
+      "status": "success"
+    },
+    "Lightweight-Brain-Diffuser": {
+      "method": "Lightweight-Brain-Diffuser",
+      "dataset": "miyawaki",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.09428074210882187,
+        "correlation": 0.7597282450099916,
+        "ssim_mean": 0.7288013696670532,
+        "ssim_std": 0.2471337765455246
+      },
+      "status": "success"
+    }
+  },
+  "vangerven": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "vangerven",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.03977249190211296,
+        "correlation": 0.7651135007669957,
+        "ssim_mean": 0.7370559573173523,
+        "ssim_std": 0.08543214201927185
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "vangerven",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.03688736632466316,
+        "correlation": 0.7878187895689545,
+        "ssim_mean": 0.7435003519058228,
+        "ssim_std": 0.06364156305789948
+      },
+      "status": "success"
+    },
+    "Lightweight-Brain-Diffuser": {
+      "method": "Lightweight-Brain-Diffuser",
+      "dataset": "vangerven",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.055471330881118774,
+        "correlation": 0.6554643892854162,
+        "ssim_mean": 0.6038879752159119,
+        "ssim_std": 0.08457629382610321
+      },
+      "status": "success"
+    }
+  },
+  "crell": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "crell",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.03393423184752464,
+        "correlation": 0.5563751996120143,
+        "ssim_mean": 0.473198264837265,
+        "ssim_std": 0.037203822284936905
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "crell",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.030336007475852966,
+        "correlation": 0.5312846397926557,
+        "ssim_mean": 0.43905454874038696,
+        "ssim_std": 0.05709318444132805
+      },
+      "status": "success"
+    },
+    "Lightweight-Brain-Diffuser": {
+      "method": "Lightweight-Brain-Diffuser",
+      "dataset": "crell",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.03037174791097641,
+        "correlation": 0.47412847750839887,
+        "ssim_mean": 0.4652177393436432,
+        "ssim_std": 0.1124720498919487
+      },
+      "status": "success"
+    }
+  },
+  "mindbigdata": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "mindbigdata",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.05408613383769989,
+        "correlation": 0.5601946469851914,
+        "ssim_mean": 0.47798681259155273,
+        "ssim_std": 0.04520375654101372
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "mindbigdata",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.05535342916846275,
+        "correlation": 0.5423343918597333,
+        "ssim_mean": 0.4377647936344147,
+        "ssim_std": 0.05012387037277222
+      },
+      "status": "success"
+    },
+    "Lightweight-Brain-Diffuser": {
+      "method": "Lightweight-Brain-Diffuser",
+      "dataset": "mindbigdata",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.05955662578344345,
+        "correlation": 0.5498080941406307,
+        "ssim_mean": 0.47164803743362427,
+        "ssim_std": 0.06529098749160767
+      },
+      "status": "success"
+    }
+  }
+}

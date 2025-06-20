@@ -1,0 +1,96 @@
+{
+  "dataset_name": "miyawaki",
+  "method": "Mind-Vis",
+  "num_samples": 3,
+  "evaluation_timestamp": "2025-06-20T10:04:18.114356",
+  "metrics": {
+    "mse": 0.008936288766562939,
+    "correlation": 0.9723771810531616,
+    "ssim_mean": 0.9597060084342957,
+    "ssim_std": 0.027199748903512955,
+    "ssim_scores": [
+      0.9365437030792236,
+      0.9978835582733154,
+      0.9446906447410583
+    ]
+  },
+  "model_info": {
+    "method_name": "Mind-Vis",
+    "paper": "Chen et al. (2023) - CVPR 2023",
+    "architecture": {
+      "encoder": "fMRI \u2192 Latent",
+      "decoder": "Latent \u2192 Visual Features",
+      "generator": "Visual Features \u2192 Images"
+    },
+    "features": {
+      "contrastive_learning": true,
+      "progressive_training": true,
+      "clip_alignment": true
+    },
+    "parameters": 7138576,
+    "input_dim": 967,
+    "latent_dim": 256,
+    "visual_dim": 512
+  },
+  "training_metadata": {
+    "dataset_name": "miyawaki",
+    "input_dim": 967,
+    "image_shape": [
+      1,
+      28,
+      28
+    ],
+    "best_test_loss": 0.03330973908305168,
+    "total_epochs": 5,
+    "model_architecture": "Mind-Vis",
+    "training_config": {
+      "batch_size": 8,
+      "learning_rate": 0.001,
+      "epochs": 5,
+      "patience": 15
+    },
+    "training_history": {
+      "train_losses": [
+        0.14381234720349312,
+        0.08484620707375663,
+        0.061275584889309745,
+        0.06392776779830456,
+        0.052657952798264365
+      ],
+      "test_losses": [
+        0.07180684059858322,
+        0.050241824239492416,
+        0.05311879329383373,
+        0.07323462888598442,
+        0.03330973908305168
+      ],
+      "learning_rates": [
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ]
+    },
+    "model_info": {
+      "method_name": "Mind-Vis",
+      "paper": "Chen et al. (2023) - CVPR 2023",
+      "architecture": {
+        "encoder": "fMRI \u2192 Latent",
+        "decoder": "Latent \u2192 Visual Features",
+        "generator": "Visual Features \u2192 Images"
+      },
+      "features": {
+        "contrastive_learning": true,
+        "progressive_training": true,
+        "clip_alignment": true
+      },
+      "parameters": 7138576,
+      "input_dim": 967,
+      "latent_dim": 256,
+      "visual_dim": 512
+    },
+    "save_timestamp": "2025-06-20T10:03:16.649010",
+    "device": "cuda"
+  }
+}

@@ -1,0 +1,130 @@
+# Mind-Vis Configuration
+# ======================
+# Configuration following original CVPR 2023 paper methodology
+# Paper: Chen et al. (2023) - CVPR 2023
+
+model:
+  name: "Mind-Vis"
+  paper: "Chen et al. (2023) - CVPR 2023"
+  
+  # Architecture Configuration
+  architecture:
+    # fMRI Encoder
+    encoder:
+      hidden_dims: [1024, 512, 256]
+      latent_dim: 256
+      dropout: 0.1
+      activation: "ReLU"
+      normalization: "LayerNorm"
+    
+    # Visual Decoder
+    decoder:
+      visual_dim: 512
+      hidden_dims: [512, 1024]
+      dropout: 0.1
+      activation: "ReLU"
+      normalization: "LayerNorm"
+    
+    # Image Generator
+    generator:
+      hidden_dims: [1024, 2048]
+      dropout: 0.1
+      activation: "ReLU"
+      normalization: "BatchNorm"
+      output_activation: "Sigmoid"
+
+training:
+  # Optimization
+  optimizer: "Adam"
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  betas: [0.9, 0.999]
+  
+  # Training Schedule
+  epochs: 100
+  batch_size: 16
+  patience: 15
+  
+  # Learning Rate Scheduling
+  scheduler: "ReduceLROnPlateau"
+  scheduler_factor: 0.5
+  scheduler_patience: 10
+  min_lr: 1.0e-8
+  
+  # Gradient Clipping
+  gradient_clip: 1.0
+  
+  # Loss Configuration
+  losses:
+    reconstruction_weight: 1.0
+    contrastive_weight: 1.0
+    contrastive_temperature: 0.07
+
+evaluation:
+  metrics:
+    - "MSE"
+    - "Correlation"
+    - "SSIM"
+  
+  visualization:
+    num_samples: 6
+    save_plots: true
+    show_features: true
+    feature_analysis: true
+
+datasets:
+  # Dataset-specific configurations
+  miyawaki:
+    name: "miyawaki"
+    description: "Visual complex patterns (binary contrast)"
+    expected_input_dim: 967
+    image_size: 28
+    channels: 1
+  
+  vangerven:
+    name: "vangerven"
+    description: "Digit patterns (grayscale)"
+    expected_input_dim: 3092
+    image_size: 28
+    channels: 1
+  
+  crell:
+    name: "crell"
+    description: "EEG→fMRI→Visual translation"
+    expected_input_dim: 3092
+    image_size: 28
+    channels: 1
+  
+  mindbigdata:
+    name: "mindbigdata"
+    description: "EEG→fMRI→Visual translation"
+    expected_input_dim: 3092
+    image_size: 28
+    channels: 1
+
+# Academic Integrity Settings
+academic_integrity:
+  original_methodology: true
+  no_modifications: true
+  exact_paper_implementation: true
+  paper_reference: "Chen et al. (2023) - CVPR 2023"
+  
+# Model Paths
+paths:
+  models_dir: "models"
+  results_dir: "results"
+  
+# Hardware Requirements
+hardware:
+  recommended_gpu: "NVIDIA RTX 3070 or better"
+  min_vram: "8GB"
+  recommended_ram: "16GB"
+  
+# Dependencies
+dependencies:
+  torch: ">=1.12.0"
+  torchvision: ">=0.13.0"
+  transformers: ">=4.21.0"
+  clip: "clip-by-openai"
+  sklearn: ">=1.0.0"
+  timm: ">=0.6.0"

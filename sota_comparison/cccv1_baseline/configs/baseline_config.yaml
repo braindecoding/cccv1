@@ -1,0 +1,68 @@
+# CCCV1 Baseline Configuration
+# ============================
+# Standard configuration for fair comparison with SOTA methods
+# No dataset-specific optimizations
+
+model:
+  name: "CCCV1-Baseline"
+  architecture:
+    hidden_dim: 512
+    dropout: 0.1
+    activation: "ReLU"
+    normalization: "BatchNorm"
+
+training:
+  # Standard hyperparameters (same for all datasets)
+  learning_rate: 0.001
+  batch_size: 16
+  weight_decay: 0.0001
+  epochs: 100
+  patience: 15
+  
+  # Optimizer settings
+  optimizer: "Adam"
+  betas: [0.9, 0.999]
+  
+  # Learning rate scheduler
+  scheduler: "ReduceLROnPlateau"
+  scheduler_factor: 0.5
+  scheduler_patience: 5
+  min_lr: 1.0e-8
+  
+  # Gradient clipping
+  gradient_clip: 1.0
+
+evaluation:
+  metrics:
+    - "MSE"
+    - "Correlation" 
+    - "SSIM"
+  
+  visualization:
+    num_samples: 6
+    save_plots: true
+
+datasets:
+  # Same configuration for all datasets (no optimization)
+  miyawaki:
+    name: "miyawaki"
+    expected_input_dim: 967
+  
+  vangerven:
+    name: "vangerven" 
+    expected_input_dim: 3092
+  
+  crell:
+    name: "crell"
+    expected_input_dim: 3092
+  
+  mindbigdata:
+    name: "mindbigdata"
+    expected_input_dim: 3092
+
+# Academic integrity settings
+academic_integrity:
+  baseline_version: true
+  no_optimizations: true
+  fair_comparison: true
+  standard_hyperparameters: true

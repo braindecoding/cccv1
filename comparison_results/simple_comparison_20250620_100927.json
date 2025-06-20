@@ -1,0 +1,34 @@
+{
+  "miyawaki": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "miyawaki",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.013276335783302784,
+        "correlation": 0.9689504958913514,
+        "ssim_mean": 0.9628817439079285,
+        "ssim_std": 0.029574591666460037
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "miyawaki",
+      "status": "no_model",
+      "note": "Model not trained"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "miyawaki",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  }
+}

@@ -1,0 +1,129 @@
+# Brain-Diffuser Configuration
+# ===========================
+# Configuration following original paper methodology
+# Paper: Ozcelik & VanRullen (2023) - Scientific Reports
+
+model:
+  name: "Brain-Diffuser"
+  paper: "Ozcelik & VanRullen (2023) - Scientific Reports"
+  
+  # Stage 1: VDVAE Configuration
+  vdvae:
+    model_type: "Very Deep Variational Autoencoder"
+    pretrained_dataset: "ImageNet"
+    input_resolution: [64, 64]
+    num_layers_used: 31  # First 31 layers as per paper
+    total_layers: 75
+    latent_dim: 91168    # Concatenated from 31 layers
+    
+  # Stage 2: Versatile Diffusion Configuration  
+  diffusion:
+    model_type: "Versatile Diffusion"
+    pretrained_dataset: "Laion2B-en"
+    output_resolution: [512, 512]
+    
+    # CLIP Configuration
+    clip:
+      model: "ViT-L/14"
+      vision_features_dim: [257, 768]  # 257 patches × 768 dim
+      text_features_dim: [77, 768]     # 77 tokens × 768 dim
+    
+    # Diffusion Parameters
+    diffusion_steps: 50
+    forward_steps: 37      # 75% of total steps (37/50)
+    noise_strength: 0.75   # Corresponds to 37 forward steps
+    
+    # Guidance Weights (from paper)
+    guidance:
+      vision_weight: 0.6
+      text_weight: 0.4
+      guidance_scale: 7.5
+
+training:
+  # Ridge Regression Parameters
+  regression:
+    alpha: 1.0           # Regularization parameter
+    solver: "auto"
+    random_state: 42
+  
+  # Training Strategy
+  strategy:
+    stage_1_first: true  # Train VDVAE regression first
+    stage_2_second: true # Then train CLIP regressions
+    
+  # Data Preprocessing
+  preprocessing:
+    normalize_fmri: true
+    normalize_images: true
+    image_format: "RGB"   # Convert grayscale to RGB for models
+
+evaluation:
+  metrics:
+    - "MSE"
+    - "Correlation"
+    - "SSIM"
+  
+  comparison:
+    compare_stages: true  # Compare VDVAE vs final output
+    calculate_improvement: true
+  
+  visualization:
+    num_samples: 6
+    save_plots: true
+    show_both_stages: true  # Show VDVAE and final results
+
+datasets:
+  # Dataset-specific configurations
+  miyawaki:
+    name: "miyawaki"
+    description: "Visual complex patterns (binary contrast)"
+    expected_input_dim: 967
+    caption_template: "geometric visual pattern"
+  
+  vangerven:
+    name: "vangerven"
+    description: "Digit patterns (grayscale)"
+    expected_input_dim: 3092
+    caption_template: "handwritten digit"
+  
+  crell:
+    name: "crell"
+    description: "EEG→fMRI→Visual translation"
+    expected_input_dim: 3092
+    caption_template: "visual pattern from EEG"
+  
+  mindbigdata:
+    name: "mindbigdata"
+    description: "EEG→fMRI→Visual translation"
+    expected_input_dim: 3092
+    caption_template: "EEG-derived visual pattern"
+
+# Academic Integrity Settings
+academic_integrity:
+  original_methodology: true
+  no_modifications: true
+  exact_paper_implementation: true
+  paper_reference: "Ozcelik & VanRullen (2023) - Scientific Reports"
+  
+# Model Paths
+paths:
+  models_dir: "models"
+  results_dir: "results"
+  
+  # Pretrained Model URLs (for reference)
+  vdvae_url: "https://github.com/openai/vdvae"
+  versatile_diffusion_url: "https://github.com/SHI-Labs/Versatile-Diffusion"
+  
+# Hardware Requirements
+hardware:
+  recommended_gpu: "NVIDIA RTX 3080 or better"
+  min_vram: "12GB"
+  recommended_ram: "32GB"
+  
+# Dependencies
+dependencies:
+  torch: ">=1.12.0"
+  diffusers: ">=0.21.0"
+  transformers: ">=4.21.0"
+  clip: "clip-by-openai"
+  sklearn: ">=1.0.0"

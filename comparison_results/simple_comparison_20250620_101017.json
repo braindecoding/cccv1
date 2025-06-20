@@ -1,0 +1,72 @@
+{
+  "miyawaki": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "miyawaki",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.0073554241098463535,
+        "correlation": 0.982757501103731,
+        "ssim_mean": 0.9818268418312073,
+        "ssim_std": 0.02545403316617012
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "miyawaki",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.016779014840722084,
+        "correlation": 0.9571819708910183,
+        "ssim_mean": 0.9445183277130127,
+        "ssim_std": 0.03276902809739113
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "miyawaki",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  },
+  "vangerven": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "vangerven",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.0377819761633873,
+        "correlation": 0.79327925098543,
+        "ssim_mean": 0.7524153590202332,
+        "ssim_std": 0.07374437153339386
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "vangerven",
+      "status": "no_model",
+      "note": "Model not trained"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "vangerven",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  }
+}

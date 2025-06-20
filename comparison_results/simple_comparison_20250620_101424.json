@@ -1,0 +1,154 @@
+{
+  "miyawaki": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "miyawaki",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.00953114964067936,
+        "correlation": 0.9787490596662057,
+        "ssim_mean": 0.9736185073852539,
+        "ssim_std": 0.03197997808456421
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "miyawaki",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.048395976424217224,
+        "correlation": 0.8919072877008808,
+        "ssim_mean": 0.8651292324066162,
+        "ssim_std": 0.11311119049787521
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "miyawaki",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  },
+  "vangerven": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "vangerven",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.043805018067359924,
+        "correlation": 0.7479322385935174,
+        "ssim_mean": 0.7183969616889954,
+        "ssim_std": 0.08027511090040207
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "vangerven",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.033650580793619156,
+        "correlation": 0.8118031075959857,
+        "ssim_mean": 0.7670294642448425,
+        "ssim_std": 0.05930621549487114
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "vangerven",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  },
+  "crell": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "crell",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.0398811474442482,
+        "correlation": 0.571618327814208,
+        "ssim_mean": 0.4622741639614105,
+        "ssim_std": 0.041474759578704834
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "crell",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.03628285229206085,
+        "correlation": 0.5298848033739157,
+        "ssim_mean": 0.4167519509792328,
+        "ssim_std": 0.05750324949622154
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "crell",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  },
+  "mindbigdata": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "mindbigdata",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.061457645148038864,
+        "correlation": 0.5755810660425353,
+        "ssim_mean": 0.45891451835632324,
+        "ssim_std": 0.0601678341627121
+      },
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "mindbigdata",
+      "num_samples": 6,
+      "metrics": {
+        "mse": 0.06227864325046539,
+        "correlation": 0.5205727318280151,
+        "ssim_mean": 0.42491450905799866,
+        "ssim_std": 0.04985061287879944
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "mindbigdata",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.045,
+        "correlation": 0.78,
+        "ssim_mean": 0.82,
+        "ssim_std": 0.09
+      },
+      "note": "Mock evaluation - requires VDVAE and Versatile Diffusion setup"
+    }
+  }
+}
