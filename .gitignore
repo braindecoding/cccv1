@@ -173,7 +173,7 @@ dmypy.json
 # Keep only essential results
 !results/complete_cv_visualizations_*/
 !results/power_analysis_*/
-
+!results/comprehensive_results_visualization_*/
 # Keep model metadata but not weights
 !models/*_metadata.json
 
