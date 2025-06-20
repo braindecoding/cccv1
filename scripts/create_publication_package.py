@@ -63,6 +63,29 @@ def create_publication_package():
         shutil.copy2("reports/enhanced_methodology_section.md",
                     main_paper_dir / "enhanced_methodology_section.md")
         print(f"   ✅ Enhanced methodology section")
+
+    # Copy article sections
+    if Path("article/metode.md").exists():
+        shutil.copy2("article/metode.md",
+                    main_paper_dir / "metode_clean.md")
+        print(f"   ✅ Clean methodology section")
+
+    if Path("article/hasil.md").exists():
+        shutil.copy2("article/hasil.md",
+                    main_paper_dir / "hasil_complete.md")
+        print(f"   ✅ Complete results section")
+
+    # Copy article figures
+    article_figures = [
+        "article/cortexflow_architecture.svg",
+        "article/methodology_flowchart.svg"
+    ]
+
+    for figure in article_figures:
+        if Path(figure).exists():
+            target_path = main_paper_dir / Path(figure).name
+            shutil.copy2(figure, target_path)
+            print(f"   ✅ {Path(figure).name}")
     
     # 2. Supplementary Materials
     print(f"\n📋 Collecting Supplementary Materials...")
