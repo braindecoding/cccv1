@@ -93,7 +93,7 @@ Kriteria konvergensi yang ketat diterapkan dengan early stopping berdasarkan val
 
 Penelitian ini menggunakan pendekatan multi-modal dengan empat dataset pemecahan kode neural yang telah tervalidasi, mencakup data fMRI dan EEG sebagaimana ditampilkan dalam fase input dataset pada Gambar 2. Dataset Miyawaki dengan 119 sampel dan dimensi input 967 merepresentasikan data fMRI kompleksitas tinggi dalam rekonstruksi pola visual. Dataset Vangerven yang terdiri dari 100 sampel dengan dimensi input 3.092 memberikan representasi data fMRI kompleksitas sedang untuk pengenalan pola digit. Dataset Crell dengan 640 sampel dan dimensi input 3.092 menyediakan data EEG dengan tantangan kompleksitas tinggi dalam pemrosesan lintas modal. Dataset MindBigData dengan 1.200 sampel dan dimensi input 3.092 merepresentasikan data EEG berskala besar dengan kompleksitas sangat tinggi.
 
-Salah satu kelebihan utama penelitian ini adalah implementasi pendekatan multi-modal yang mengintegrasikan data fMRI dan EEG untuk memberikan representasi neural yang lebih komprehensif. Untuk dataset EEG (Crell dan MindBigData), dilakukan proses neural transcoding menggunakan NT-ViT (Neural Transcoding Vision Transformers) untuk sintesis EEG-to-fMRI, memungkinkan unifikasi representasi neural dalam ruang fMRI yang konsisten.
+Salah satu kelebihan utama penelitian ini adalah implementasi pendekatan multi-modal yang mengintegrasikan data fMRI dan EEG untuk memberikan representasi neural yang lebih komprehensif. Untuk dataset EEG (Crell dan MindBigData), dilakukan proses neural transcoding menggunakan NT-ViT (Neural Transcoding Vision Transformers) sebagaimana dijelaskan detail dalam Section 3.3.1.
 
 Protokol prapemrosesan yang konsisten diterapkan pada seluruh dataset dengan adaptasi khusus untuk modalitas yang berbeda sesuai dengan fase prapemrosesan data dalam Gambar 2.
 
@@ -107,7 +107,7 @@ Protokol prapemrosesan yang konsisten diterapkan pada seluruh dataset dengan ada
 - Band-pass filtering (0.5-50 Hz) untuk menghilangkan artifact
 - Independent Component Analysis (ICA) untuk removal artifact mata dan otot
 - Epoch extraction dan baseline correction
-- Neural transcoding menggunakan NT-ViT untuk konversi ke representasi fMRI
+- Neural transcoding menggunakan NT-ViT (detail dalam Section 3.3.1)
 
 ### 3.3.3 Data Quality Assurance and Validation
 
@@ -181,7 +181,7 @@ Evaluasi kinerja menggunakan metrik primer berupa Mean Squared Error untuk mengu
 
 Pengujian hipotesis menggunakan hipotesis nol bahwa tidak terdapat perbedaan signifikan antara metode dan hipotesis alternatif bahwa CortexFlow menunjukkan kinerja yang lebih baik secara signifikan. Uji statistik menggunakan uji-t berpasangan untuk perbandingan dalam dataset dengan koreksi perbandingan berganda menggunakan metode Bonferroni.
 
-### 3.4.1 Statistical Power and Effect Size Analysis
+### 3.4.2 Statistical Power and Effect Size Analysis
 
 **Power Analysis Framework:**
 Statistical power analysis dilakukan untuk memastikan adequacy sampel dalam mendeteksi perbedaan yang meaningful antara metode. Berdasarkan pilot studies dan literature review, effect size minimum yang dianggap practically significant ditetapkan pada Cohen's d = 0.5 (medium effect). Power analysis menggunakan α = 0.05 dan desired power = 0.80.
