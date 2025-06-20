@@ -22,24 +22,7 @@ Hasil pada Tabel 2 dan Gambar 4 menunjukkan bahwa CortexFlow mencapai kinerja te
 
 ## 4.2 Analisis Signifikansi Statistik
 
-### 4.2.1 Penjelasan Konsep Statistik untuk Pembaca Umum
-
-Sebelum membahas hasil statistik, penting untuk memahami konsep-konsep kunci yang digunakan dalam analisis ini:
-
-**Pengujian Hipotesis:**
-Pengujian hipotesis adalah metode ilmiah untuk menentukan apakah perbedaan kinerja yang kita amati antara CortexFlow dan metode pembanding benar-benar signifikan atau hanya terjadi karena kebetulan. Dalam penelitian ini, kita menguji dua kemungkinan:
-- **Hipotesis Nol (H₀):** Tidak ada perbedaan nyata antara CortexFlow dan metode pembanding
-- **Hipotesis Alternatif (H₁):** CortexFlow benar-benar lebih baik secara signifikan
-
-**Uji-t Berpasangan:**
-Uji-t berpasangan adalah teknik statistik yang membandingkan kinerja dua metode pada dataset yang sama. Bayangkan seperti membandingkan nilai ujian dua siswa pada soal yang identik - ini memberikan perbandingan yang adil karena kondisi pengujiannya sama. Dalam konteks neural decoding, ini berarti kita menguji CortexFlow dan metode pembanding pada data fMRI/EEG yang persis sama, sehingga perbedaan kinerja benar-benar disebabkan oleh keunggulan metode, bukan perbedaan data.
-
-**Koreksi Bonferroni:**
-Ketika kita melakukan banyak perbandingan sekaligus (CortexFlow vs Mind-Vis, CortexFlow vs Brain-Diffuser pada 4 dataset), ada risiko menemukan perbedaan yang tampak signifikan padahal sebenarnya hanya kebetulan. Koreksi Bonferroni adalah metode untuk mengatasi masalah ini dengan membuat kriteria signifikansi menjadi lebih ketat.
-
-### 4.2.2 Interpretasi Hasil Statistik
-
-Pengujian hipotesis dilakukan untuk memvalidasi signifikansi statistik dari perbedaan kinerja antara CortexFlow dan metode pembanding menggunakan metodologi yang telah dijelaskan di atas.
+Pengujian hipotesis dilakukan untuk memvalidasi signifikansi statistik dari perbedaan kinerja antara CortexFlow dan metode pembanding. Analisis menggunakan uji-t berpasangan dengan koreksi Bonferroni untuk mengatasi masalah perbandingan berganda.
 
 **Tabel 3: Analisis Signifikansi Statistik**
 
@@ -56,51 +39,7 @@ Pengujian hipotesis dilakukan untuk memvalidasi signifikansi statistik dari perb
 
 *Signifikansi: *p < 0,05, **p < 0,01, ***p < 0,001. Effect Size: Small (d ≥ 0,2), Medium (d ≥ 0,5), Large (d ≥ 0,8)*
 
-### 4.2.3 Penjelasan Istilah Statistik dalam Konteks Penelitian
-
-**t-statistic (Statistik-t):**
-Nilai t-statistic menunjukkan seberapa besar perbedaan antara dua metode relatif terhadap variabilitas data. Nilai yang lebih besar (baik positif maupun negatif) menunjukkan perbedaan yang lebih jelas. Dalam penelitian ini, nilai negatif menunjukkan bahwa CortexFlow memiliki MSE yang lebih rendah (kinerja lebih baik) dibandingkan metode pembanding.
-
-**p-value (Nilai-p):**
-p-value adalah probabilitas bahwa perbedaan yang kita amati terjadi hanya karena kebetulan. Semakin kecil p-value, semakin yakin kita bahwa perbedaan tersebut nyata:
-- **p < 0,05 (*):** Ada kemungkinan kurang dari 5% bahwa perbedaan ini hanya kebetulan (cukup yakin)
-- **p < 0,01 (**):** Ada kemungkinan kurang dari 1% bahwa perbedaan ini hanya kebetulan (sangat yakin)
-- **p < 0,001 (***):** Ada kemungkinan kurang dari 0,1% bahwa perbedaan ini hanya kebetulan (sangat sangat yakin)
-
-**Cohen's d (Ukuran Efek):**
-Cohen's d mengukur seberapa besar perbedaan praktis antara dua metode, bukan hanya apakah perbedaan itu signifikan secara statistik. Analogi sederhana: bayangkan membandingkan tinggi badan dua kelompok orang. p-value memberitahu kita apakah ada perbedaan tinggi, sedangkan Cohen's d memberitahu seberapa besar perbedaan tinggi tersebut dalam kehidupan nyata:
-- **Small (d ≥ 0,2):** Seperti perbedaan tinggi 2-3 cm - ada tapi tidak terlalu mencolok
-- **Medium (d ≥ 0,5):** Seperti perbedaan tinggi 5-8 cm - cukup terlihat jelas
-- **Large (d ≥ 0,8):** Seperti perbedaan tinggi >10 cm - sangat jelas dan bermakna
-
-Dalam konteks neural decoding, Cohen's d yang besar berarti CortexFlow tidak hanya sedikit lebih baik, tetapi jauh lebih baik dalam merekonstruksi sinyal neural menjadi gambar visual.
-
-### 4.2.4 Interpretasi Hasil dalam Konteks Penelitian
-
-Hasil analisis statistik pada Tabel 3 mengkonfirmasi bahwa CortexFlow mencapai signifikansi statistik yang kuat dengan ukuran efek yang besar di sebagian besar perbandingan. Ini berarti:
-
-**Untuk Dataset Miyawaki:**
-- **Cohen's d = 3,54 vs Mind-Vis:** Perbedaan yang sangat besar - CortexFlow jauh lebih baik
-- **p < 0,001:** Kemungkinan kurang dari 0,1% bahwa perbedaan ini hanya kebetulan
-- **Kesimpulan:** CortexFlow secara meyakinkan dan bermakna lebih baik dari Mind-Vis
-
-**Untuk Semua Dataset:**
-Semua perbandingan menunjukkan signifikansi statistik dengan p-value < 0,05, dengan mayoritas mencapai p-value < 0,001. Ini berarti kita dapat sangat yakin bahwa keunggulan CortexFlow bukan hanya kebetulan, tetapi merupakan peningkatan kinerja yang nyata dan dapat diandalkan.
-
-### 4.2.5 Implikasi Praktis dari Hasil Statistik
-
-**Mengapa Analisis Statistik Penting dalam Penelitian Neural Decoding:**
-
-1. **Validasi Ilmiah:** Dalam penelitian neural decoding, kita bekerja dengan data yang kompleks dan bervariasi. Analisis statistik memastikan bahwa peningkatan kinerja yang kita klaim benar-benar nyata, bukan hanya fluktuasi acak dalam data.
-
-2. **Reproducibilitas:** Dengan menunjukkan signifikansi statistik yang kuat (p < 0,001), kita memberikan keyakinan bahwa hasil ini dapat direproduksi oleh peneliti lain menggunakan metodologi yang sama.
-
-3. **Relevansi Praktis:** Ukuran efek yang besar (Cohen's d > 0,8) menunjukkan bahwa peningkatan kinerja CortexFlow tidak hanya signifikan secara statistik, tetapi juga bermakna dalam aplikasi praktis neural decoding.
-
-**Interpretasi untuk Aplikasi Klinis:**
-- **Konsistensi Hasil:** Signifikansi statistik yang konsisten across datasets menunjukkan bahwa CortexFlow dapat diandalkan untuk berbagai jenis data neural
-- **Margin Keamanan:** Effect size yang besar memberikan margin keamanan untuk variabilitas yang mungkin terjadi dalam aplikasi klinis nyata
-- **Confidence Level:** p-value < 0,001 memberikan tingkat kepercayaan yang tinggi untuk implementasi dalam sistem medis yang memerlukan reliabilitas tinggi
+Hasil analisis statistik pada Tabel 3 mengkonfirmasi bahwa CortexFlow mencapai signifikansi statistik yang kuat dengan effect size yang large di sebagian besar perbandingan. Khususnya pada dataset Miyawaki, CortexFlow menunjukkan effect size yang sangat besar dengan Cohen's d mencapai 3,54 untuk perbandingan dengan Mind-Vis dan 4,93 untuk perbandingan dengan Lightweight Brain-Diffuser. Semua perbandingan menunjukkan signifikansi statistik dengan p-value < 0,05, dengan mayoritas mencapai p-value < 0,001.
 
 ## 4.3 Spesifikasi Teknis dan Efisiensi Komputasi
 
