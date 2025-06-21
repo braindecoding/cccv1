@@ -1,0 +1,152 @@
+{
+  "verification_timestamp": "20250621_083107",
+  "comparison_results": {
+    "miyawaki": {
+      "cv_best_exists": true,
+      "cccv1_best_exists": true,
+      "cv_best_size": 368606573,
+      "cccv1_best_size": 368626647,
+      "cv_best_hash": null,
+      "cccv1_best_hash": null,
+      "are_identical": false,
+      "size_difference": 20074
+    },
+    "vangerven": {
+      "cv_best_exists": true,
+      "cccv1_best_exists": true,
+      "cv_best_size": 377310907,
+      "cccv1_best_size": 377330981,
+      "cv_best_hash": null,
+      "cccv1_best_hash": null,
+      "are_identical": false,
+      "size_difference": 20074
+    },
+    "crell": {
+      "cv_best_exists": true,
+      "cccv1_best_exists": true,
+      "cv_best_size": 377309571,
+      "cccv1_best_size": 377329645,
+      "cv_best_hash": null,
+      "cccv1_best_hash": null,
+      "are_identical": false,
+      "size_difference": 20074
+    },
+    "mindbigdata": {
+      "cv_best_exists": true,
+      "cccv1_best_exists": true,
+      "cv_best_size": 377311575,
+      "cccv1_best_size": 377331713,
+      "cv_best_hash": null,
+      "cccv1_best_hash": null,
+      "are_identical": false,
+      "size_difference": 20138
+    }
+  },
+  "usage_statistics": {
+    "cv_best_references": [
+      {
+        "file": "scripts\\analyze_cortexflow_models.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\calculate_fixed_metrics.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\complete_cv_analysis_all_models.py",
+        "count": 3
+      },
+      {
+        "file": "scripts\\debug_cortexflow_loading.py",
+        "count": 2
+      },
+      {
+        "file": "scripts\\fix_brain_diffuser_mindbigdata.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\generate_all_reconstructions.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\generate_complete_4x4_comparison.py",
+        "count": 3
+      },
+      {
+        "file": "scripts\\generate_real_sota_reconstructions.py",
+        "count": 2
+      },
+      {
+        "file": "scripts\\real_carbon_footprint_analysis.py",
+        "count": 6
+      },
+      {
+        "file": "scripts\\test_correct_cortexflow_loading.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\validate_cccv1.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\verify_computational_efficiency_data.py",
+        "count": 3
+      },
+      {
+        "file": "scripts\\verify_duplicate_models.py",
+        "count": 4
+      },
+      {
+        "file": "scripts\\verify_model_checkpoints.py",
+        "count": 3
+      },
+      {
+        "file": "scripts\\visualize_cv_saved_model.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\visualize_reconstruction_fixed.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\visualize_reconstruction_results.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\visualize_with_correct_cortexflow.py",
+        "count": 1
+      }
+    ],
+    "cccv1_best_references": [
+      {
+        "file": "scripts\\analyze_cortexflow_models.py",
+        "count": 1
+      },
+      {
+        "file": "scripts\\verify_duplicate_models.py",
+        "count": 4
+      },
+      {
+        "file": "scripts\\verify_model_checkpoints.py",
+        "count": 1
+      }
+    ],
+    "total_cv_best": 36,
+    "total_cccv1_best": 6
+  },
+  "cleanup_recommendations": {
+    "safe_to_remove": [],
+    "space_savings_mb": 0,
+    "primary_format": "cv_best",
+    "action_plan": [
+      "\u26a0\ufe0f No identical duplicates found",
+      "\ud83d\udd0d Manual review needed for different files"
+    ]
+  },
+  "summary": {
+    "total_datasets": 4,
+    "identical_pairs": 0,
+    "potential_space_savings_mb": 0,
+    "primary_format": "cv_best"
+  }
+}

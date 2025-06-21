@@ -1,0 +1,41 @@
+{
+  "cleanup_timestamp": "20250621_083859",
+  "backup_directory": "backup/cleanup_backup_20250621_083858",
+  "cleanup_statistics": {
+    "publication_packages": {
+      "space_saved_mb": 226.0080966949463,
+      "items_removed": 1343
+    },
+    "python_cache": {
+      "space_saved_mb": 0.15877342224121094,
+      "items_removed": 17
+    },
+    "incorrect_visualizations": {
+      "space_saved_mb": 2.934300422668457,
+      "items_removed": 3
+    },
+    "redundant_scripts": {
+      "space_saved_mb": 0.04422760009765625,
+      "items_removed": 4
+    },
+    "old_visualizations": {
+      "space_saved_mb": 3.7050533294677734,
+      "items_removed": 2
+    }
+  },
+  "total_space_saved_mb": 232.8504514694214,
+  "total_items_removed": 1369,
+  "remaining_files": {
+    "correct_cortexflow_metrics": "results/correct_cortexflow_metrics_20250621_082448.json",
+    "correct_visualization_script": "scripts/visualize_with_correct_cortexflow.py",
+    "fair_comparison_results": "results/final_fair_comparison_20250621_073025/",
+    "model_checkpoints": "models/*_cv_best.pth"
+  },
+  "cleanup_actions": [
+    "Removed publication package backups",
+    "Cleaned Python cache files",
+    "Removed incorrect visualization results",
+    "Removed redundant scripts",
+    "Removed old visualization results"
+  ]
+}

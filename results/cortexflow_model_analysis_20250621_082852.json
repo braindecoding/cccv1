@@ -1,0 +1,3002 @@
+{
+  "analysis_timestamp": "20250621_082852",
+  "summary": {
+    "total_files": 217,
+    "total_size_mb": 1480.008246421814,
+    "categories": {
+      "pytorch_model": 4,
+      "source_code": 47,
+      "unknown": 63,
+      "metadata": 103
+    }
+  },
+  "files_by_category": {
+    "pytorch_model": [
+      {
+        "path": "models\\crell_cccv1_best.pth",
+        "name": "crell_cccv1_best.pth",
+        "size_mb": 359.849591255188,
+        "directory": "models"
+      },
+      {
+        "path": "models\\mindbigdata_cccv1_best.pth",
+        "name": "mindbigdata_cccv1_best.pth",
+        "size_mb": 359.8515634536743,
+        "directory": "models"
+      },
+      {
+        "path": "models\\miyawaki_cccv1_best.pth",
+        "name": "miyawaki_cccv1_best.pth",
+        "size_mb": 351.549765586853,
+        "directory": "models"
+      },
+      {
+        "path": "models\\vangerven_cccv1_best.pth",
+        "name": "vangerven_cccv1_best.pth",
+        "size_mb": 359.8508653640747,
+        "directory": "models"
+      }
+    ],
+    "source_code": [
+      {
+        "path": "src\\models\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "src\\models"
+      },
+      {
+        "path": "sota_comparison\\cccv1_cv_trainer.py",
+        "name": "cccv1_cv_trainer.py",
+        "size_mb": 0.008687973022460938,
+        "directory": "sota_comparison"
+      },
+      {
+        "path": "sota_comparison\\cccv1_optimized_adapter.py",
+        "name": "cccv1_optimized_adapter.py",
+        "size_mb": 0.009123802185058594,
+        "directory": "sota_comparison"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility"
+      }
+    ],
+    "unknown": [
+      {
+        "path": "src\\models\\__pycache__\\cortexflow_clip_cnn_v1.cpython-311.pyc",
+        "name": "cortexflow_clip_cnn_v1.cpython-311.pyc",
+        "size_mb": 0.014743804931640625,
+        "directory": "src\\models\\__pycache__"
+      },
+      {
+        "path": "sota_comparison\\__pycache__\\cccv1_optimized_adapter.cpython-311.pyc",
+        "name": "cccv1_optimized_adapter.cpython-311.pyc",
+        "size_mb": 0.012460708618164062,
+        "directory": "sota_comparison\\__pycache__"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\01_main_paper"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations"
+      }
+    ],
+    "metadata": [
+      {
+        "path": "sota_comparison\\comparison_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "sota_comparison\\comparison_results"
+      },
+      {
+        "path": "sota_comparison\\comparison_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "sota_comparison\\comparison_results"
+      },
+      {
+        "path": "sota_comparison\\comparison_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "sota_comparison\\comparison_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results"
+      }
+    ]
+  },
+  "usage_analysis": {
+    "cortexflow_clip_cnn_v1.py": [
+      "scripts\\analyze_cortexflow_models.py",
+      "scripts\\complete_cv_analysis_all_models.py",
+      "scripts\\comprehensive_green_sota_analysis.py",
+      "scripts\\create_publication_package.py",
+      "scripts\\generate_all_reconstructions.py",
+      "scripts\\generate_complete_4x4_comparison.py",
+      "scripts\\generate_real_sota_reconstructions.py",
+      "scripts\\green_neural_decoding_analysis.py",
+      "scripts\\green_neural_decoding_simple.py",
+      "scripts\\real_carbon_footprint_analysis.py",
+      "scripts\\validate_cccv1.py",
+      "scripts\\verify_computational_efficiency_data.py",
+      "scripts\\visualize_cv_saved_model.py",
+      "scripts\\visualize_with_correct_cortexflow.py"
+    ],
+    "cccv1_models": [
+      "scripts\\analyze_cortexflow_models.py",
+      "scripts\\complete_cv_analysis_all_models.py",
+      "scripts\\generate_all_reconstructions.py",
+      "scripts\\generate_complete_4x4_comparison.py",
+      "scripts\\generate_real_sota_reconstructions.py",
+      "scripts\\real_carbon_footprint_analysis.py",
+      "scripts\\validate_cccv1.py",
+      "scripts\\verify_computational_efficiency_data.py",
+      "scripts\\visualize_cv_saved_model.py",
+      "scripts\\visualize_reconstruction_results.py",
+      "scripts\\visualize_with_correct_cortexflow.py"
+    ],
+    "other_cortexflow": [
+      "scripts\\academic_integrity_verification.py",
+      "scripts\\analyze_cortexflow_models.py",
+      "scripts\\auto_fair_comparison.py",
+      "scripts\\calculate_fixed_metrics.py",
+      "scripts\\collect_all_visualizations.py",
+      "scripts\\complete_cv_analysis_all_models.py",
+      "scripts\\complete_visualization.py",
+      "scripts\\comprehensive_cv_analysis.py",
+      "scripts\\comprehensive_evaluation.py",
+      "scripts\\comprehensive_green_sota_analysis.py",
+      "scripts\\create_academic_summary_visualization.py",
+      "scripts\\create_comprehensive_green_visualization.py",
+      "scripts\\create_comprehensive_visual_comparison.py",
+      "scripts\\create_publication_package.py",
+      "scripts\\create_real_data_only_comparison.py",
+      "scripts\\create_real_performance_chart.py",
+      "scripts\\create_results_visualization.py",
+      "scripts\\create_visual_comparison.py",
+      "scripts\\debug_cortexflow_loading.py",
+      "scripts\\fairness_audit.py",
+      "scripts\\fair_comparison_framework.py",
+      "scripts\\final_fair_comparison.py",
+      "scripts\\full_cortexflow_training.py",
+      "scripts\\full_training_cleanup.py",
+      "scripts\\generate_all_reconstructions.py",
+      "scripts\\generate_complete_4x4_comparison.py",
+      "scripts\\generate_real_sota_reconstructions.py",
+      "scripts\\generate_real_statistical_table.py",
+      "scripts\\green_neural_decoding_analysis.py",
+      "scripts\\green_neural_decoding_simple.py",
+      "scripts\\immediate_fair_actions.py",
+      "scripts\\monitor_sota_training.py",
+      "scripts\\real_carbon_footprint_analysis.py",
+      "scripts\\real_data_summary.py",
+      "scripts\\real_statistical_analysis.py",
+      "scripts\\run_power_analysis.py",
+      "scripts\\simple_carbon_analysis.py",
+      "scripts\\test_correct_cortexflow_loading.py",
+      "scripts\\train_all_sota_models.py",
+      "scripts\\validate_cccv1.py",
+      "scripts\\verify_computational_efficiency_data.py",
+      "scripts\\verify_model_checkpoints.py",
+      "scripts\\verify_table2_data.py",
+      "scripts\\visualize_cv_saved_model.py",
+      "scripts\\visualize_reconstruction_fixed.py",
+      "scripts\\visualize_reconstruction_results.py",
+      "scripts\\visualize_with_correct_cortexflow.py"
+    ]
+  },
+  "checkpoint_status": {
+    "miyawaki": {
+      "models/miyawaki_cv_best.pth": {
+        "exists": true,
+        "size_mb": 351.5306215286255,
+        "status": "active"
+      },
+      "models/miyawaki_cccv1_best.pth": {
+        "exists": true,
+        "size_mb": 351.549765586853,
+        "status": "backup"
+      },
+      "saved_models/cortexflow/miyawaki.pth": {
+        "exists": false,
+        "size_mb": 0,
+        "status": "missing"
+      }
+    },
+    "vangerven": {
+      "models/vangerven_cv_best.pth": {
+        "exists": true,
+        "size_mb": 359.83172130584717,
+        "status": "active"
+      },
+      "models/vangerven_cccv1_best.pth": {
+        "exists": true,
+        "size_mb": 359.8508653640747,
+        "status": "backup"
+      },
+      "saved_models/cortexflow/vangerven.pth": {
+        "exists": false,
+        "size_mb": 0,
+        "status": "missing"
+      }
+    },
+    "crell": {
+      "models/crell_cv_best.pth": {
+        "exists": true,
+        "size_mb": 359.83044719696045,
+        "status": "active"
+      },
+      "models/crell_cccv1_best.pth": {
+        "exists": true,
+        "size_mb": 359.849591255188,
+        "status": "backup"
+      },
+      "saved_models/cortexflow/crell.pth": {
+        "exists": false,
+        "size_mb": 0,
+        "status": "missing"
+      }
+    },
+    "mindbigdata": {
+      "models/mindbigdata_cv_best.pth": {
+        "exists": true,
+        "size_mb": 359.8323583602905,
+        "status": "active"
+      },
+      "models/mindbigdata_cccv1_best.pth": {
+        "exists": true,
+        "size_mb": 359.8515634536743,
+        "status": "backup"
+      },
+      "saved_models/cortexflow/mindbigdata.pth": {
+        "exists": false,
+        "size_mb": 0,
+        "status": "missing"
+      }
+    }
+  },
+  "cleanup_recommendations": {
+    "safe_to_remove": [
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility\\validate_cccv1.py",
+        "name": "validate_cccv1.py",
+        "size_mb": 0.018759727478027344,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\05_code_and_reproducibility",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\01_main_paper\\cortexflow_architecture.svg",
+        "name": "cortexflow_architecture.svg",
+        "size_mb": 0.008693695068359375,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\01_main_paper",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.png",
+        "name": "cccv1_green_analysis_20250620_113102.png",
+        "size_mb": 0.49974918365478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations\\cccv1_green_analysis_20250620_113102.svg",
+        "name": "cccv1_green_analysis_20250620_113102.svg",
+        "size_mb": 0.15355777740478516,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110400\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_110423\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111013\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_111413\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_113256\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114018\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_114242\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_123729\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_124516\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_140943\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_141847\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_142621\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_143245\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_144543\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_145148\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_150538\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_153555\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_154009\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_155239\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_160538\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_161508\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_165110\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_171909\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_173101\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_175243\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations\\cccv1_green_results_20250620_113113.json",
+        "name": "cccv1_green_results_20250620_113113.json",
+        "size_mb": 0.0028295516967773438,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\03_figures_and_visualizations",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results",
+        "reason": "publication_backup"
+      },
+      {
+        "path": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "publication_packages\\CCCV1_Academic_Publication_Package_20250620_182117\\04_data_and_results",
+        "reason": "publication_backup"
+      }
+    ],
+    "review_needed": [
+      {
+        "path": "models\\crell_cccv1_best.pth",
+        "name": "crell_cccv1_best.pth",
+        "size_mb": 359.849591255188,
+        "directory": "models",
+        "review_needed": true
+      },
+      {
+        "path": "models\\mindbigdata_cccv1_best.pth",
+        "name": "mindbigdata_cccv1_best.pth",
+        "size_mb": 359.8515634536743,
+        "directory": "models",
+        "review_needed": true
+      },
+      {
+        "path": "models\\miyawaki_cccv1_best.pth",
+        "name": "miyawaki_cccv1_best.pth",
+        "size_mb": 351.549765586853,
+        "directory": "models",
+        "review_needed": true
+      },
+      {
+        "path": "models\\vangerven_cccv1_best.pth",
+        "name": "vangerven_cccv1_best.pth",
+        "size_mb": 359.8508653640747,
+        "directory": "models",
+        "review_needed": true
+      },
+      {
+        "path": "src\\models\\cortexflow_clip_cnn_v1.py",
+        "name": "cortexflow_clip_cnn_v1.py",
+        "size_mb": 0.01190185546875,
+        "directory": "src\\models",
+        "review_needed": true
+      },
+      {
+        "path": "sota_comparison\\cccv1_cv_trainer.py",
+        "name": "cccv1_cv_trainer.py",
+        "size_mb": 0.008687973022460938,
+        "directory": "sota_comparison",
+        "review_needed": true
+      },
+      {
+        "path": "sota_comparison\\cccv1_optimized_adapter.py",
+        "name": "cccv1_optimized_adapter.py",
+        "size_mb": 0.009123802185058594,
+        "directory": "sota_comparison",
+        "review_needed": true
+      },
+      {
+        "path": "src\\models\\__pycache__\\cortexflow_clip_cnn_v1.cpython-311.pyc",
+        "name": "cortexflow_clip_cnn_v1.cpython-311.pyc",
+        "size_mb": 0.014743804931640625,
+        "directory": "src\\models\\__pycache__",
+        "review_needed": true
+      },
+      {
+        "path": "sota_comparison\\__pycache__\\cccv1_optimized_adapter.cpython-311.pyc",
+        "name": "cccv1_optimized_adapter.cpython-311.pyc",
+        "size_mb": 0.012460708618164062,
+        "directory": "sota_comparison\\__pycache__",
+        "review_needed": true
+      },
+      {
+        "path": "sota_comparison\\comparison_results\\cccv1_optimized_results_20250620_094138.json",
+        "name": "cccv1_optimized_results_20250620_094138.json",
+        "size_mb": 0.0001010894775390625,
+        "directory": "sota_comparison\\comparison_results",
+        "review_needed": true
+      },
+      {
+        "path": "sota_comparison\\comparison_results\\cccv1_optimized_results_20250620_094237.json",
+        "name": "cccv1_optimized_results_20250620_094237.json",
+        "size_mb": 0.13334369659423828,
+        "directory": "sota_comparison\\comparison_results",
+        "review_needed": true
+      },
+      {
+        "path": "sota_comparison\\comparison_results\\cccv1_optimized_results_20250620_094300.json",
+        "name": "cccv1_optimized_results_20250620_094300.json",
+        "size_mb": 1.109694480895996,
+        "directory": "sota_comparison\\comparison_results",
+        "review_needed": true
+      }
+    ],
+    "keep_essential": [],
+    "total_space_saved_mb": 47.60640335083008
+  }
+}

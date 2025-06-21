@@ -1,0 +1,30 @@
+{
+  "miyawaki": {
+    "mse": 0.007570332381874323,
+    "correlation": 0.9816349901219318,
+    "ssim": 0.97773677110672,
+    "num_samples": 12,
+    "status": "success_correct"
+  },
+  "vangerven": {
+    "mse": 0.034323081374168396,
+    "correlation": 0.7997565830332702,
+    "ssim": 0.7669355273246765,
+    "num_samples": 10,
+    "status": "success_correct"
+  },
+  "crell": {
+    "mse": 0.029276972636580467,
+    "correlation": 0.5132282501609012,
+    "ssim": 0.46122950315475464,
+    "num_samples": 20,
+    "status": "success_correct"
+  },
+  "mindbigdata": {
+    "mse": 0.050751954317092896,
+    "correlation": 0.544615554671049,
+    "ssim": 0.4658265709877014,
+    "num_samples": 20,
+    "status": "success_correct"
+  }
+}

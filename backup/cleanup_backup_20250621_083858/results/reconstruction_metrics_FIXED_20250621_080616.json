@@ -1,0 +1,94 @@
+{
+  "miyawaki": {
+    "CortexFlow": {
+      "mse": 0.16769936680793762,
+      "correlation": 0.6577061229899851,
+      "ssim": 0.2856529653072357,
+      "num_samples": 12,
+      "status": "success_fixed"
+    },
+    "Brain-Diffuser": {
+      "mse": 1.7101386902140803e-06,
+      "correlation": 0.9999962969405162,
+      "ssim": 0.9999940991401672,
+      "num_samples": 12,
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "mse": 0.004152143839746714,
+      "correlation": 0.9899360965505055,
+      "ssim": 0.9855406284332275,
+      "num_samples": 12,
+      "status": "success"
+    }
+  },
+  "vangerven": {
+    "CortexFlow": {
+      "mse": 0.2942003905773163,
+      "correlation": -0.19191895222199953,
+      "ssim": -0.06630954891443253,
+      "num_samples": 10,
+      "status": "success_fixed"
+    },
+    "Brain-Diffuser": {
+      "mse": 2.1898351576510322e-07,
+      "correlation": 0.9999990880940786,
+      "ssim": 0.9999987483024597,
+      "num_samples": 10,
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "mse": 0.038077592849731445,
+      "correlation": 0.7781873128006686,
+      "ssim": 0.7232152223587036,
+      "num_samples": 10,
+      "status": "success"
+    }
+  },
+  "crell": {
+    "CortexFlow": {
+      "mse": 0.03399547189474106,
+      "correlation": 0.49976663423485557,
+      "ssim": 0.41091448068618774,
+      "num_samples": 20,
+      "status": "success_fixed"
+    },
+    "Brain-Diffuser": {
+      "mse": 0.028426485136151314,
+      "correlation": 0.6039567507559246,
+      "ssim": 0.5368422269821167,
+      "num_samples": 20,
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "mse": 0.03211096674203873,
+      "correlation": 0.5331253439397313,
+      "ssim": 0.46369919180870056,
+      "num_samples": 20,
+      "status": "success"
+    }
+  },
+  "mindbigdata": {
+    "CortexFlow": {
+      "mse": 0.8183861970901489,
+      "correlation": -0.31460531515786255,
+      "ssim": -0.07454119622707367,
+      "num_samples": 20,
+      "status": "success_fixed"
+    },
+    "Brain-Diffuser": {
+      "mse": 0.044114235788583755,
+      "correlation": 0.6624646606554383,
+      "ssim": 0.5803793668746948,
+      "num_samples": 20,
+      "status": "success"
+    },
+    "Mind-Vis": {
+      "mse": 0.05415055528283119,
+      "correlation": 0.5560716826574336,
+      "ssim": 0.4678104519844055,
+      "num_samples": 20,
+      "status": "success"
+    }
+  }
+}
