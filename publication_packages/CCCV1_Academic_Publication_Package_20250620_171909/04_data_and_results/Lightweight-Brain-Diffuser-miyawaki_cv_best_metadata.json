@@ -1,0 +1,11 @@
+{
+  "method": "Lightweight-Brain-Diffuser-miyawaki",
+  "input_dim": 967,
+  "best_fold": 4,
+  "best_score": 0.0012339040404185653,
+  "cv_framework": "UnifiedCVFramework",
+  "n_folds": 10,
+  "random_state": 42,
+  "academic_compliant": true,
+  "save_timestamp": "2025-06-20T16:59:10.624505"
+}

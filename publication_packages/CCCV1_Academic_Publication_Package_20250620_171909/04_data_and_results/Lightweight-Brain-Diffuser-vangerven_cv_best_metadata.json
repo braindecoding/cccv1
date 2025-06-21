@@ -1,0 +1,11 @@
+{
+  "method": "Lightweight-Brain-Diffuser-vangerven",
+  "input_dim": 3092,
+  "best_fold": 8,
+  "best_score": 0.04395467787981033,
+  "cv_framework": "UnifiedCVFramework",
+  "n_folds": 10,
+  "random_state": 42,
+  "academic_compliant": true,
+  "save_timestamp": "2025-06-20T17:00:51.167354"
+}

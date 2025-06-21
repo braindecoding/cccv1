@@ -1,0 +1,520 @@
+{
+  "miyawaki": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "miyawaki",
+      "num_samples": 12,
+      "metrics": {
+        "mse": 0.007570331450551748,
+        "correlation": 0.9816350936889648,
+        "correlation_p_value": 0.0,
+        "ssim_mean": 0.9777368903160095,
+        "ssim_std": 0.026661641895771027,
+        "ssim_scores": [
+          0.9998083114624023,
+          0.9998153448104858,
+          0.9996590614318848,
+          0.9933592677116394,
+          0.9463597536087036,
+          0.9980429410934448,
+          0.9807213544845581,
+          0.9934586882591248,
+          0.9297294020652771,
+          0.927312433719635,
+          0.9943118095397949,
+          0.9702631235122681
+        ],
+        "psnr": 21.20885133743286
+      },
+      "model_info": {
+        "method_name": "CCCV1-Optimized",
+        "dataset": "miyawaki",
+        "architecture": "CortexFlowCLIPCNNV1Optimized",
+        "input_dim": 967,
+        "optimizations": {
+          "dataset_specific": true,
+          "clip_guidance": true,
+          "progressive_dropout": true,
+          "semantic_enhancement": true
+        },
+        "config": {
+          "name": "Ultra-Stable",
+          "architecture": {
+            "dropout_encoder": 0.06,
+            "dropout_decoder": 0.02,
+            "clip_residual_weight": 0.1,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.0003,
+            "batch_size": 8,
+            "weight_decay": 1e-08,
+            "epochs": 200,
+            "patience": 25,
+            "scheduler_factor": 0.3,
+            "optimizer": "Adam",
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "small",
+            "samples": 107,
+            "input_dim": 967,
+            "strategy": "ultra_stable_learning"
+          }
+        }
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "miyawaki",
+      "status": "failed",
+      "error": "Failed to setup Brain-Diffuser models"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "miyawaki",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.03,
+        "correlation": 0.85,
+        "ssim_mean": 0.85,
+        "ssim_std": 0.08,
+        "psnr": 18.0
+      },
+      "note": "Mock evaluation - model not trained"
+    }
+  },
+  "vangerven": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "vangerven",
+      "num_samples": 10,
+      "metrics": {
+        "mse": 0.034323081374168396,
+        "correlation": 0.799756646156311,
+        "correlation_p_value": 0.0,
+        "ssim_mean": 0.7669354677200317,
+        "ssim_std": 0.06370269507169724,
+        "ssim_scores": [
+          0.7540088295936584,
+          0.6905655860900879,
+          0.6874009966850281,
+          0.767819881439209,
+          0.6900994181632996,
+          0.7561283707618713,
+          0.8449526429176331,
+          0.7662614583969116,
+          0.8446428775787354,
+          0.8674750924110413
+        ],
+        "psnr": 14.644137620925903
+      },
+      "model_info": {
+        "method_name": "CCCV1-Optimized",
+        "dataset": "vangerven",
+        "architecture": "CortexFlowCLIPCNNV1Optimized",
+        "input_dim": 3092,
+        "optimizations": {
+          "dataset_specific": true,
+          "clip_guidance": true,
+          "progressive_dropout": true,
+          "semantic_enhancement": true
+        },
+        "config": {
+          "name": "Medium-Stable",
+          "architecture": {
+            "dropout_encoder": 0.05,
+            "dropout_decoder": 0.015,
+            "clip_residual_weight": 0.08,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.0005,
+            "batch_size": 12,
+            "weight_decay": 5e-08,
+            "epochs": 150,
+            "patience": 20,
+            "scheduler_factor": 0.5,
+            "optimizer": "Adam",
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "small",
+            "samples": 90,
+            "input_dim": 3092,
+            "strategy": "medium_stable_learning"
+          }
+        }
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "vangerven",
+      "status": "failed",
+      "error": "Failed to setup Brain-Diffuser models"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "vangerven",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.03,
+        "correlation": 0.85,
+        "ssim_mean": 0.85,
+        "ssim_std": 0.08,
+        "psnr": 18.0
+      },
+      "note": "Mock evaluation - model not trained"
+    }
+  },
+  "crell": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "crell",
+      "num_samples": 64,
+      "metrics": {
+        "mse": 0.03207520768046379,
+        "correlation": 0.5526188611984253,
+        "correlation_p_value": 0.0,
+        "ssim_mean": 0.4792000353336334,
+        "ssim_std": 0.05164352059364319,
+        "ssim_scores": [
+          0.3963792324066162,
+          0.39641767740249634,
+          0.4077788293361664,
+          0.5213632583618164,
+          0.4985770881175995,
+          0.5205891132354736,
+          0.4985819458961487,
+          0.42135685682296753,
+          0.5214618444442749,
+          0.5038557052612305,
+          0.5373735427856445,
+          0.5303133726119995,
+          0.39637839794158936,
+          0.4985768795013428,
+          0.3964177966117859,
+          0.4674297273159027,
+          0.3964177370071411,
+          0.42135685682296753,
+          0.46750038862228394,
+          0.40767788887023926,
+          0.5214626789093018,
+          0.5213634967803955,
+          0.5304096341133118,
+          0.49858200550079346,
+          0.5373443961143494,
+          0.40777894854545593,
+          0.5038556456565857,
+          0.5304101705551147,
+          0.5303131937980652,
+          0.5303129553794861,
+          0.5205888748168945,
+          0.537344217300415,
+          0.5213627815246582,
+          0.4985770881175995,
+          0.5205576419830322,
+          0.42135685682296753,
+          0.5205889344215393,
+          0.4985771179199219,
+          0.5373439788818359,
+          0.42135685682296753,
+          0.5213637351989746,
+          0.5038557648658752,
+          0.4076775014400482,
+          0.42135679721832275,
+          0.4674999713897705,
+          0.42135685682296753,
+          0.46742966771125793,
+          0.5038557052612305,
+          0.5303130745887756,
+          0.46749988198280334,
+          0.5038557648658752,
+          0.5205889344215393,
+          0.5303156971931458,
+          0.5373440980911255,
+          0.40777909755706787,
+          0.5038556456565857,
+          0.40777912735939026,
+          0.3963785171508789,
+          0.5205575823783875,
+          0.5038436651229858,
+          0.5373440980911255,
+          0.39637938141822815,
+          0.4077787399291992,
+          0.46749988198280334
+        ],
+        "psnr": 14.938305616378784
+      },
+      "model_info": {
+        "method_name": "CCCV1-Optimized",
+        "dataset": "crell",
+        "architecture": "CortexFlowCLIPCNNV1Optimized",
+        "input_dim": 3092,
+        "optimizations": {
+          "dataset_specific": true,
+          "clip_guidance": true,
+          "progressive_dropout": true,
+          "semantic_enhancement": true
+        },
+        "config": {
+          "name": "Medium-Dataset-Opt",
+          "architecture": {
+            "dropout_encoder": 0.05,
+            "dropout_decoder": 0.02,
+            "clip_residual_weight": 0.08,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.0008,
+            "batch_size": 20,
+            "weight_decay": 5e-07,
+            "epochs": 120,
+            "patience": 15,
+            "scheduler_factor": 0.5,
+            "optimizer": "Adam",
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "medium",
+            "samples": 576,
+            "input_dim": 3092,
+            "strategy": "medium_dataset_optimization"
+          }
+        }
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "crell",
+      "status": "failed",
+      "error": "Failed to setup Brain-Diffuser models"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "crell",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.03,
+        "correlation": 0.85,
+        "ssim_mean": 0.85,
+        "ssim_std": 0.08,
+        "psnr": 18.0
+      },
+      "note": "Mock evaluation - model not trained"
+    }
+  },
+  "mindbigdata": {
+    "CCCV1-Optimized": {
+      "method": "CCCV1-Optimized",
+      "dataset": "mindbigdata",
+      "num_samples": 120,
+      "metrics": {
+        "mse": 0.05665149167180061,
+        "correlation": 0.5576765537261963,
+        "correlation_p_value": 0.0,
+        "ssim_mean": 0.46765848994255066,
+        "ssim_std": 0.06424397230148315,
+        "ssim_scores": [
+          0.5273804068565369,
+          0.4436050355434418,
+          0.4437881410121918,
+          0.5067942142486572,
+          0.52745121717453,
+          0.4960177540779114,
+          0.36506134271621704,
+          0.5334951877593994,
+          0.5253950953483582,
+          0.4856718182563782,
+          0.4236379861831665,
+          0.5348237156867981,
+          0.5338690280914307,
+          0.3737267255783081,
+          0.3786671757698059,
+          0.5274350047111511,
+          0.5274407863616943,
+          0.4244397282600403,
+          0.5223177075386047,
+          0.36429181694984436,
+          0.44378015398979187,
+          0.4931541085243225,
+          0.3667515218257904,
+          0.494872510433197,
+          0.40572062134742737,
+          0.44393762946128845,
+          0.5324680805206299,
+          0.5266310572624207,
+          0.5281867980957031,
+          0.49484145641326904,
+          0.3800292909145355,
+          0.4415643811225891,
+          0.48907560110092163,
+          0.36735501885414124,
+          0.5122663974761963,
+          0.5068551898002625,
+          0.42198872566223145,
+          0.49486592411994934,
+          0.5328497290611267,
+          0.34293442964553833,
+          0.4894491732120514,
+          0.516922652721405,
+          0.438940167427063,
+          0.4948442280292511,
+          0.49484169483184814,
+          0.365263968706131,
+          0.4396577477455139,
+          0.534171462059021,
+          0.36547303199768066,
+          0.5281857252120972,
+          0.5280370712280273,
+          0.5219810009002686,
+          0.36558428406715393,
+          0.413580983877182,
+          0.5342203378677368,
+          0.527457594871521,
+          0.5330376029014587,
+          0.37982359528541565,
+          0.49486398696899414,
+          0.4791443943977356,
+          0.5324793457984924,
+          0.3713146150112152,
+          0.37988758087158203,
+          0.5340194702148438,
+          0.438844233751297,
+          0.4846617579460144,
+          0.5069363713264465,
+          0.5144456624984741,
+          0.3800596594810486,
+          0.36912310123443604,
+          0.522160530090332,
+          0.46707576513290405,
+          0.37985852360725403,
+          0.5325884222984314,
+          0.49395492672920227,
+          0.5072193741798401,
+          0.533903181552887,
+          0.4948206841945648,
+          0.36709919571876526,
+          0.36692389845848083,
+          0.5070382356643677,
+          0.534842848777771,
+          0.4948658347129822,
+          0.5279521346092224,
+          0.5282204151153564,
+          0.5215851068496704,
+          0.5330736637115479,
+          0.36477014422416687,
+          0.5282396078109741,
+          0.37859371304512024,
+          0.3645077049732208,
+          0.3798677325248718,
+          0.5327811241149902,
+          0.5346112251281738,
+          0.532952606678009,
+          0.415393203496933,
+          0.5218294262886047,
+          0.4437609016895294,
+          0.5328696370124817,
+          0.4437716603279114,
+          0.3649047017097473,
+          0.3660251200199127,
+          0.48333635926246643,
+          0.35802802443504333,
+          0.4963153898715973,
+          0.5213506817817688,
+          0.3800498843193054,
+          0.5329605937004089,
+          0.44385263323783875,
+          0.3794694244861603,
+          0.4437448978424072,
+          0.5328512191772461,
+          0.4948176443576813,
+          0.4770575165748596,
+          0.5283312201499939,
+          0.3707163333892822,
+          0.5329779982566833,
+          0.5333951711654663,
+          0.5274496078491211,
+          0.42155921459198
+        ],
+        "psnr": 12.46788740158081
+      },
+      "model_info": {
+        "method_name": "CCCV1-Optimized",
+        "dataset": "mindbigdata",
+        "architecture": "CortexFlowCLIPCNNV1Optimized",
+        "input_dim": 3092,
+        "optimizations": {
+          "dataset_specific": true,
+          "clip_guidance": true,
+          "progressive_dropout": true,
+          "semantic_enhancement": true
+        },
+        "config": {
+          "name": "Large-Dataset-Opt",
+          "architecture": {
+            "dropout_encoder": 0.04,
+            "dropout_decoder": 0.02,
+            "clip_residual_weight": 0.05,
+            "clip_dim": 512
+          },
+          "training": {
+            "lr": 0.001,
+            "batch_size": 32,
+            "weight_decay": 1e-06,
+            "epochs": 100,
+            "patience": 12,
+            "scheduler_factor": 0.5,
+            "optimizer": "Adam",
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "gradient_clip": 0.5
+          },
+          "dataset_characteristics": {
+            "size": "large",
+            "samples": 1080,
+            "input_dim": 3092,
+            "strategy": "large_dataset_optimization"
+          }
+        }
+      },
+      "status": "success"
+    },
+    "Brain-Diffuser": {
+      "method": "Brain-Diffuser",
+      "dataset": "mindbigdata",
+      "status": "failed",
+      "error": "Failed to setup Brain-Diffuser models"
+    },
+    "Mind-Vis": {
+      "method": "Mind-Vis",
+      "dataset": "mindbigdata",
+      "status": "mock",
+      "metrics": {
+        "mse": 0.03,
+        "correlation": 0.85,
+        "ssim_mean": 0.85,
+        "ssim_std": 0.08,
+        "psnr": 18.0
+      },
+      "note": "Mock evaluation - model not trained"
+    }
+  }
+}

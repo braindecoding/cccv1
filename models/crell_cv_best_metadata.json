@@ -2,7 +2,7 @@
   "dataset_name": "crell",
   "input_dim": 3092,
   "best_fold": 7,
-  "best_score": 0.03028373047709465,
+  "best_score": 0.030335215851664543,
   "config": {
     "name": "Medium-Dataset-Opt",
     "architecture": {
@@ -33,6 +33,6 @@
     }
   },
   "model_architecture": "CortexFlowCLIPCNNV1Optimized",
-  "save_timestamp": "2025-06-20T10:58:31.327367",
+  "save_timestamp": "2025-06-21T01:08:46.506439",
   "device": "cuda"
 }

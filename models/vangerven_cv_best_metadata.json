@@ -2,7 +2,7 @@
   "dataset_name": "vangerven",
   "input_dim": 3092,
   "best_fold": 7,
-  "best_score": 0.040226858109235764,
+  "best_score": 0.036840442568063736,
   "config": {
     "name": "Medium-Stable",
     "architecture": {
@@ -33,6 +33,6 @@
     }
   },
   "model_architecture": "CortexFlowCLIPCNNV1Optimized",
-  "save_timestamp": "2025-06-20T10:55:04.354119",
+  "save_timestamp": "2025-06-21T01:06:50.538951",
   "device": "cuda"
 }

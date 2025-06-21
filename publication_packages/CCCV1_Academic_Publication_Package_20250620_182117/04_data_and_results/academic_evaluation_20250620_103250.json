@@ -1,0 +1,30 @@
+{
+  "results": {
+    "miyawaki": {
+      "Lightweight-Brain-Diffuser": {
+        "method": "Lightweight-Brain-Diffuser",
+        "dataset": "miyawaki",
+        "cv_scores": [
+          0.06757787615060806,
+          0.06884698942303658,
+          0.052873892709612846,
+          0.05893249064683914,
+          0.0629781074821949
+        ],
+        "cv_mean": 0.062241871282458304,
+        "cv_std": 0.005854119918116118,
+        "n_folds": 5,
+        "academic_compliant": true
+      }
+    }
+  },
+  "metadata": {
+    "timestamp": "20250620_103250",
+    "datasets": [
+      "miyawaki"
+    ],
+    "n_folds": 5,
+    "random_state": 42,
+    "academic_compliant": true
+  }
+}

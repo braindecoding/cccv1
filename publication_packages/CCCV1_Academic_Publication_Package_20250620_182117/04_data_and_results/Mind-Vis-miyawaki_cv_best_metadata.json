@@ -1,0 +1,13 @@
+{
+  "dataset": "miyawaki",
+  "model_type": "Mind-Vis",
+  "input_dim": 967,
+  "best_fold": 4,
+  "best_score": 0.0001689982454990968,
+  "cv_mean": 0.010809033804980573,
+  "cv_std": 0.006149772610445243,
+  "n_folds": 10,
+  "academic_seed": 42,
+  "timestamp": "2025-06-20T17:25:24.051605",
+  "academic_compliant": true
+}
